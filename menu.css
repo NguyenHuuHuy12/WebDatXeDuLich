@@ -1,0 +1,50 @@
+body{
+    background-color: white;
+    font-family: "Times New Roman", Times, serif;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    height: 100%;
+}
+header{
+    background-color: aqua;
+    height: 200px;
+}
+header h1{
+    color: blue;
+    text-align: center;
+    font-size: 50px;
+    margin: 0;
+    padding: 50px;
+
+}
+
+header a:hover{
+    text-decoration: underline;
+}
+header a:active{
+color: coral;
+}
+.Home{
+    position: fixed;     /* Cố định ở một vị trí trên màn hình */
+    top: 20px;           /* Cách mép trên 20px */
+    left: 20px;          /* Cách mép trái 20px */
+    padding: 15px 30px;  /* Tăng kích thước nút */
+    background-color: #0078D7; /* Màu xanh kiểu Windows */
+    color: white;
+    border: none;
+    border-radius: 10px;
+    font-size: 20px;
+    font-weight: bold;
+    cursor: pointer;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.3s ease;
+}
+.item{
+    display: inline-block;  /* xếp ngang */
+    margin-left: 20px;
+    text-decoration: none;
+    color: blue;
+    font-weight: bold;
+    font-size: 20px;
+}
