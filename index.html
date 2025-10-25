@@ -2,20 +2,59 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Trang chủ</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Auto Cars</title>
     <link rel="stylesheet" href="menu.css">
+    <script src="menu.js"></script>
 </head>
 <body>
+<header>
+    <a href="index.html" class="logo">Auto Cars</a>
 
-    <header> <h1>WELDCOM TO BEN XE MIEN DONG</h1>
+    <nav>
+        <ul class="menu">
+            <li><a href="index.html" class="active">Trang CHủ</a></li>
+            <li><a href="driver.html">Loại Xe</a></li>
+            <li><a href="schedule.html">Lịch Trình
+            <ul>
+                <ul class="submenu">
+                    <li><a href="#">TP.HCM → Vũng Tàu</a></li>
+                    <li><a href="#">TP.HCM → Đà Lạt</a></li>
+                    <li><a href="#">TP.HCM → Nha Trang</a></li>
+                    <li><a href="#">TP.HCM → Phan Thiết</a></li>
+                </ul>
+            </ul></a></li>
+            <li><a href="Cost.html">Bảng Giá</a></li>
+            <li><a href="History.html">Lịch sử đặt xe</a></li>
+        </ul>
+    </nav>
+    <button class="login-btn" onclick="window.location.href='login.html'">Login</button>
+</header>
 
-        <a class="Home" href="index.html">HOME</a>
-        <a class="item" href="LichTrinh.html">Lịch Trình</a>
-        <a class="item" href="Type.html">Loại Xe</a>
-        <a class="item" href="Cost.html">Bảng Giá</a>
-        <a class="item" href="History.html">Lịch Sử Đặt Xe </a>
-        <a class="item" href="SignUp.html">Đăng Nhập/Đăng Kí</a>
-   </header>
-    <main></main>
+<main class="hero">
+    <div class="hero-text">
+        <h1>Book Rides<br><span>Anywhere</span></h1>
+        <p>Mọi người muốn có một chuyến đi hoàn hảo! Chọn chúng tôi để không bỏ lỡ những điều thú vị nhé</p>
+        <div class="buttons">
+            <button class="book-btn">Book Now</button>
+            <button class="call-btn">Call Operator</button>
+        </div>
+    </div>
+    <div class="hero-image">
+        <img src="https://media.istockphoto.com/id/879364174/vi/anh/xe-bu%C3%BDt-m%C3%A0u-tr%E1%BA%AFng-di-chuy%E1%BB%83n-tr%C3%AAn-%C4%91%C6%B0%E1%BB%9Dng-nh%E1%BB%B1a-trong-c%E1%BA%A3nh-quan-n%C3%B4ng-th%C3%B4n-l%C3%BAc-ho%C3%A0ng-h%C3%B4n.jpg?s=612x612&w=0&k=20&c=dkg6lIsO7ZlvGyPhEp13a8VincTRspCGAtook4nFf54=" alt="Taxi illustration">
+    </div>
+</main>
+<footer>
+    <div class="left">
+        © 2025 Auto Cars. Mọi quyền được bảo lưu.
+    </div>
+    <div class="right">
+        <a href="#">Chính sách bảo mật</a> |
+        <a href="#">Điều khoản sử dụng</a> |
+        <a href="#">Liên hệ</a>
+    </div>
+</footer>
+
+<script src="script.js"></script>
 </body>
 </html>
