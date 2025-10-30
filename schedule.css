@@ -1,52 +1,84 @@
 body {
-    background-color: #c8102e;
+    background-image: url("https://tte.edu.vn/public/upload/2025/01/avatar-thien-nhien-12.webp");
+    background-size: cover;
     font-family: "Poppins", sans-serif;
     margin: 0;
     padding: 0;
 }
-
-.slider {
-    text-align: center;
-    color: white;
-    padding: 30px 0;
+.carousel-container {
     position: relative;
     overflow: hidden;
+    width: 90%;
+    margin: auto;
 }
 
-.slider-wrapper {
-    width: 1500px; /* 300px * 5 ảnh */
+.nav {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.6);
+    color: white;
+    border: none;
+    font-size: 28px;
+    padding: 10px 15px;
+    cursor: pointer;
+    border-radius: 50%;
+    z-index: 10;
+}
+
+.prev {
+    left: 10px;
+}
+
+.next {
+    right: 10px;
+}
+
+.nav:hover {
+    background-color: rgba(0, 0, 0, 0.85);
+}
+
+.carousel {
+    color: white;
+    text-align: center;
+    padding: 30px 0;
+    position: relative;
+}
+
+.carousel-container {
+    position: relative;
+    width: 1200px;
     margin: 0 auto;
     overflow: hidden;
 }
 
-.slider-container {
+.carousel-track {
     display: flex;
-    transition: transform 1s ease-in-out;
-    width: max-content;
+    transition: transform 0.6s ease-in-out;
 }
 
-.slide {
-    width: 280px;
-    background: white;
-    color: black;
-    border-radius: 20px;
+.card {
+    flex: 0 0 380px;
     margin: 0 10px;
+    background: white;
+    border-radius: 20px;
     overflow: hidden;
-    flex-shrink: 0;
+    color: black;
+    text-align: center;
 }
 
-.slide img {
+.card img {
     width: 100%;
-    height: 180px;
+    height: 200px;
     object-fit: cover;
 }
 
-.slide p {
-    padding: 10px;
+.card p {
     font-weight: bold;
+    padding: 10px;
 }
 
-.slide span {
+.card span {
     color: #0077cc;
 }
 
@@ -56,14 +88,66 @@ body {
     transform: translateY(-50%);
     background: white;
     border: none;
-    color: #c8102e;
-    font-size: 24px;
     border-radius: 50%;
-    width: 40px;
-    height: 40px;
+    width: 45px;
+    height: 45px;
+    color: #c8102e;
+    font-size: 22px;
     cursor: pointer;
-    z-index: 10; /* Giữ trên ảnh */
+    z-index: 2;
 }
 
-.prev { left: 20px; }
-.next { right: 20px; }
+.prev { left: -60px; }
+.next { right: -60px; }
+header {
+    background-color: #4a5568;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 60px;
+    border-bottom: 1px solid #e5e5e5;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: 700;
+    color: #f7931e;
+    text-decoration: none; /* bỏ gạch chân */
+}
+
+.logo:hover {
+    color: #e27c09; /* hiệu ứng khi rê chuột */
+}
+
+.menu {
+    list-style: none;
+    display: flex;
+    gap: 40px;
+}
+
+.menu a {
+    text-decoration: none;
+    color: #e27c09;
+    font-weight: 500;
+}
+
+.menu a.active,
+.menu a:hover {
+    color: #f7931e;
+}
+
+.login-btn {
+    background-color: #f7931e;
+    color: white;
+    border: none;
+    padding: 10px 25px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: 600;
+    font-size: 16px;
+    transition: 0.3s;
+}
+
+.login-btn:hover {
+    background-color: #e27c09;
+}

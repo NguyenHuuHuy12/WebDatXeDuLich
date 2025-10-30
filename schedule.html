@@ -6,54 +6,86 @@
     <link rel="stylesheet" href="schedule.css">
 </head>
 <body>
-<section class="slider">
+<header>
+<a href="index.html" class="logo">Auto Cars</a>
+
+<nav>
+    <ul class="menu">
+        <li><a href="index.html" class="active">Trang CHủ</a></li>
+        <li><a href="car.html">Loại Xe</a></li>
+        <li><a href="schedule.html">Lịch Trình</a></li>
+        <li><a href="Cost.html">Bảng Giá</a></li>
+        <li><a href="History.html">Lịch sử đặt xe</a></li>
+    </ul>
+</nav>
+<button class="login-btn" onclick="window.location.href='login.html'">Login</button>
+</header>
+
+<section class="carousel">
     <h2>TUYẾN ĐƯỜNG PHỔ BIẾN</h2>
-    <div class="slider-container" id="slider">
-        <div class="slide"><img src="https://bhd.1cdn.vn/2025/07/07/cau-hoang-van-thu-1-6ca5b1e8b315a843ba4a8484b77c83e9.jpg">
+    <div class="carousel-container">
+        <button class="nav prev" onclick="moveSlide(-1)">&#10094;</button>
+        <div class="carousel-track" id="track">
+        <div class="card"><img src="https://bhd.1cdn.vn/2025/07/07/cau-hoang-van-thu-1-6ca5b1e8b315a843ba4a8484b77c83e9.jpg">
             <p>Hà Nội - Hải Phòng<br><span>Giá từ 100.000đ</span></p></div>
 
-        <div class="slide"><img src="https://samtenhills.vn/wp-content/uploads/2024/11/kinh-nghiem-du-lich-da-lat-1-minh.jpg">
+        <div class="card"><img src="https://samtenhills.vn/wp-content/uploads/2024/11/kinh-nghiem-du-lich-da-lat-1-minh.jpg">
             <p>Hồ Chí Minh - Đà Lạt<br><span>Giá từ 200.000đ</span></p></div>
 
-        <div class="slide"><img src="https://letsflytravel.vn/wp-content/uploads/2024/08/nha-trang-2.webp">
+        <div class="card"><img src="https://letsflytravel.vn/wp-content/uploads/2024/08/nha-trang-2.webp">
             <p>Hồ Chí Minh - Nha Trang<br><span>Giá từ 200.000đ</span></p></div>
 
-        <div class="slide"><img src="https://bcp.cdnchinhphu.vn/334894974524682240/2023/12/20/tong-quan-du-lich-vung-tau-ivivu-17030443479121842547903.jpg">
+        <div class="card"><img src="https://bcp.cdnchinhphu.vn/334894974524682240/2023/12/20/tong-quan-du-lich-vung-tau-ivivu-17030443479121842547903.jpg">
             <p>Hồ Chí Minh - Vũng Tàu<br><span>Giá từ 250.000đ</span></p></div>
 
-        <div class="slide"><img src="https://bvhttdl.mediacdn.vn/2020/12/7/113-16073308192891103771291.jpg">
+        <div class="card"><img src="https://bvhttdl.mediacdn.vn/2020/12/7/113-16073308192891103771291.jpg">
             <p>Hồ Chí Minh - Bình Thuận<br><span>Giá từ 400.000đ</span></p></div>
 
-        <div class="slide"><img src="https://vuonqgmcm.camau.gov.vn//Datafiles/vuonqgmcm-camau-gov-vn/wps/wcm/connect/vuonquocgiamuicamau/194d34e6-80cb-4060-a8a4-37ce0b688c2c/29-2ba1-jpg-3fmod-3dajperes-26amp-3bcacheid-3droot.png">
+        <div class="card"><img src="https://vuonqgmcm.camau.gov.vn//Datafiles/vuonqgmcm-camau-gov-vn/wps/wcm/connect/vuonquocgiamuicamau/194d34e6-80cb-4060-a8a4-37ce0b688c2c/29-2ba1-jpg-3fmod-3dajperes-26amp-3bcacheid-3droot.png">
             <p>Hồ Chí Minh - Cà Mau<br><span>Giá từ 300.000đ</span></p></div>
 
-        <div class="slide"><img src="https://cdn-media.sforum.vn/storage/app/media/ctvseo_MH/%E1%BA%A3nh%20%C4%91%E1%BA%B9p%20%C4%91%C3%A0%20n%E1%BA%B5ng/anh-dep-da-nang-thumb.jpg">
+        <div class="card"><img src="https://cdn-media.sforum.vn/storage/app/media/ctvseo_MH/%E1%BA%A3nh%20%C4%91%E1%BA%B9p%20%C4%91%C3%A0%20n%E1%BA%B5ng/anh-dep-da-nang-thumb.jpg">
             <p>Hồ Chí Minh - Đà Nẵng<br><span>Giá từ 450.000đ</span></p></div>
 
-        <div class="slide"><img src="https://file.hstatic.net/200000504041/file/phu-quoc-joys-holiday-hon-mong-tay_7aa61984a61649338e6c7bb83459bd3f_grande.jpeg">
+        <div class="card"><img src="https://file.hstatic.net/200000504041/file/phu-quoc-joys-holiday-hon-mong-tay_7aa61984a61649338e6c7bb83459bd3f_grande.jpeg">
             <p>Hồ Chí Minh - Phú Quốc<br><span>Giá từ 500.000đ</span></p></div>
 
-        <div class="slide"><img src="https://upload.wikimedia.org/wikipedia/commons/a/aa/Cangmytho.jpg">
+        <div class="card"><img src="https://upload.wikimedia.org/wikipedia/commons/a/aa/Cangmytho.jpg">
             <p>Hồ Chí Minh - Tiền Giang<br><span>Giá từ 200.000đ</span></p></div>
 
-        <div class="slide"><img src="https://bcp.cdnchinhphu.vn/334894974524682240/2024/11/25/thanh-pho-tra-vinh-17325004471012008994314.jpg">
+        <div class="card"><img src="https://bcp.cdnchinhphu.vn/334894974524682240/2024/11/25/thanh-pho-tra-vinh-17325004471012008994314.jpg">
             <p>Hồ Chí Minh - Trà Vinh<br><span>Giá từ 250.000đ</span></p></div>
 
-        <div class="slide"><img src="https://cdnmedia.baotintuc.vn/Upload/c2tvplmdloSDblsn03qN2Q/files/2020/09/22/dong-xoai-binh-phuoc-22920.jpg">
+        <div class="card"><img src="https://cdnmedia.baotintuc.vn/Upload/c2tvplmdloSDblsn03qN2Q/files/2020/09/22/dong-xoai-binh-phuoc-22920.jpg">
             <p>Hồ Chí Minh - Bình Phước<br><span>Giá từ 200.000đ</span></p></div>
 
-        <div class="slide"><img src="https://cdn3.ivivu.com/2023/12/du-lich-binh-dinh-ivivu1.jpeg">
+        <div class="card"><img src="https://cdn3.ivivu.com/2023/12/du-lich-binh-dinh-ivivu1.jpeg">
             <p>Hồ Chí Minh - Bình Định<br><span>Giá từ 400.000đ</span></p></div>
 
-        <div class="slide"><img src="https://www.tapchicongsan.org.vn/documents/20182/15194140/hinh-anh-vinh-ha-long-6.jpg/966133f2-82d4-49b5-ad3c-d80bf00ce533?t=1604239595122">
-            <p>Hà Nội - Quảng Ninh<br><span>Giá từ 300.000đ</span></p>
+        <div class="card"><img src="https://www.tapchicongsan.org.vn/documents/20182/15194140/hinh-anh-vinh-ha-long-6.jpg/966133f2-82d4-49b5-ad3c-d80bf00ce533?t=1604239595122">
+            <p>Hà Nội - Quảng Ninh<br><span>Giá từ 300.000đ</span></p></div>
 
-        <div class="slide"><img src="https://cdn.tgdd.vn/Files/2021/06/15/1360257/ngat-ngay-voi-5-dia-diem-du-lich-hue-noi-tieng-hap-dan-dep-quen-loi-ve-202306211529096077.jpg">
+        <div class="card"><img src="https://cdn.tgdd.vn/Files/2021/06/15/1360257/ngat-ngay-voi-5-dia-diem-du-lich-hue-noi-tieng-hap-dan-dep-quen-loi-ve-202306211529096077.jpg">
             <p>Hà Nội - Thừa Thiên Huế<br><span>Giá từ 800.000đ</span></p></div>
+
+        <div class="card"><img src="https://mediabcb.mediatech.vn/upload/image/202309/medium/109007_cb_mua_thu2_18104912.jpg">
+            <p>Hà Nội - Cao Bằng<br><span>Giá từ 400.000đ</span></p></div>
+
+            <div class="card"><img src="https://dulichokela.com/wp-content/uploads/2024/01/top-10-dia-diem-du-lich-lang-son.jpg">
+                <p>Hà Nội - Lạng Sơn<br><span>Giá từ 500.000đ</span></p></div>
+
+            <div class="card"><img src="https://static.vinwonders.com/production/dia-diem-du-lich-ha-tinh-banner.jpg">
+                <p>Hà Nội - Hà Tĩnh<br><span>Giá từ 400.000đ</span></p></div>
+
+            <div class="card"><img src="https://imagevietnam.vnanet.vn//MediaUpload/Org/2024/05/18/hcml-118-15-18-25.jpg">
+                <p>Hà Nội - Hồ Chí Minh<br><span>Giá từ 1.200.000đ</span></p></div>
+            <div class="card"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ5Cc7GmmNa9qx6Kphm9Tw-7FbLThTDz2_ViA&s">
+                <p>Hồ Chí Minh - Hà Nội<br><span>Giá từ 1.200.000đ</span></p></div>
+    </div>
+            <button class="nav next" onclick="moveSlide(1)">&#10095;</button>
     </div>
 
-    <button class="nav prev" onclick="moveSlide(-1)">&#10094;</button>
-    <button class="nav next" onclick="moveSlide(1)">&#10095;</button>
+
 </section>
 
 <script src="schedule.js"></script>
