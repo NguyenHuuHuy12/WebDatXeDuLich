@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bảng giá thuê xe du lịch</title>
+    <script src="Cost.js"></script>
+    <link rel="stylesheet" href="Cost.css">
+
+</head>
+<body>
+<header>
+<a href="index.html" class="logo">Auto Cars</a>
+
+<nav>
+    <ul class="menu">
+        <li><a href="index.html" class="active">Trang CHủ</a></li>
+        <li><a href="car.html">Loại Xe</a></li>
+        <li><a href="schedule.html">Lịch Trình</a></li>
+        <li><a href="Cost.html">Bảng Giá</a></li>
+        <li><a href="History.html">Lịch sử đặt xe</a></li>
+    </ul>
+</nav>
+<button class="login-btn" onclick="window.location.href='login.html'">Login</button>
+</header>
+
+
+<h2 class="title">Bảng giá thuê xe du lịch</h2>
+
+<div class="search-container">
+    <input type="text" id="searchInput" placeholder="🔍 Tìm theo điểm đến...">
+</div>
+
+<table id="priceTable">
+    <thead>
+    <tr>
+        <th>Tour đi đánh Golf</th>
+        <th>Thời gian</th>
+        <th>Số km</th>
+        <th>4 chỗ</th>
+        <th>7 chỗ</th>
+        <th>16 chỗ</th>
+        <th>29 chỗ</th>
+        <th>35 chỗ</th>
+        <th>45 chỗ</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr>
+        <td class="highlight">TP. Hồ Chí Minh - Bình Định </td><td>8 tiếng</td><td>600</td><td>1tr2</td><td>1tr4</td><td>2tr0</td><td>2tr7</td><td>3tr3</td><td>4tr0</td>
+    </tr>
+    <tr>
+        <td class="highlight">TP. Hồ Chí Minh - Bình Thuận</td><td>8 tiếng</td><td>600</td><td>1tr2</td><td>1tr4</td><td>2tr0</td><td>2tr7</td><td>3tr3</td><td>4tr0</td>
+    </tr>
+    <tr>
+        <td class="highlight">TP. Hồ Chí Minh - Đà Nẵng</td><td>4 tiếng</td><td>300</td><td>1tr5</td><td>1tr7</td><td>2tr5</td><td>3tr3</td><td>3tr8</td><td>4tr7</td>
+    </tr>
+    <tr>
+        <td class="highlight">TP. Hồ  Chi Minh - Bình Phước</td><td>2 tiếng</td><td>100</td><td>1tr5</td><td>1tr7</td><td>2tr5</td><td>3tr3</td><td>3tr8</td><td>4tr7</td>
+    </tr>
+    <tr>
+        <td class="highlight">TP. Hồ Chí Minh - Đà Lạt</td><td>4 tiếng</td><td>400</td><td>2tr5</td><td>2tr7</td><td>3tr7</td><td>4tr9</td><td>6tr0</td><td>7tr0</td>
+    </tr>
+    <tr>
+        <td class="highlight">TP.Hồ Chí Minh - Nha Trang</td><td>10 tiếng</td><td>500</td><td>1tr9k</td><td>2tr5</td><td>3tr0</td><td>4tr5</td><td>6tr0</td><td>6tr7</td>
+    </tr>
+    <tr>
+        <td class="highlight">TP.Hồ Chí Minh - Cà Mau</td><td>8 tiếng</td><td>400</td><td>1tr3</td><td>1tr5</td><td>2tr2</td><td>3tr0</td><td>3tr5</td><td>4tr0</td>
+    </tr>
+    </tbody>
+</table>
+
+<script src="banggia.js"></script>
+</body>
+</html>

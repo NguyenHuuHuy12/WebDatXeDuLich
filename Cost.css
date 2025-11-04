@@ -1,0 +1,112 @@
+body {
+    font-family: "Poppins", sans-serif;
+    background: #f5f7fa;
+    padding: 30px;
+}
+
+.title {
+    text-align: center;
+    color: #b10000;
+    margin-bottom: 20px;
+}
+
+.search-container {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+#searchInput {
+    width: 60%;
+    padding: 10px 15px;
+    font-size: 16px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    outline: none;
+    transition: all 0.3s;
+}
+
+#searchInput:focus {
+    border-color: #b10000;
+    box-shadow: 0 0 5px rgba(177, 0, 0, 0.4);
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: white;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+th, td {
+    border: 1px solid #ccc;
+    padding: 10px;
+    text-align: center;
+}
+
+th {
+    background-color: #e6f3ff;
+}
+
+.highlight {
+    background-color: #cce5ff;
+    font-weight: bold;
+    text-align: left;
+}
+
+tbody tr:hover {
+    background-color: #fff3cd;
+    transition: 0.2s;
+}
+header {
+    background-color: #4a5568;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 60px;
+    border-bottom: 1px solid #e5e5e5;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: 700;
+    color: #f7931e;
+    text-decoration: none; /* bỏ gạch chân */
+}
+
+.logo:hover {
+    color: #e27c09; /* hiệu ứng khi rê chuột */
+}
+
+.menu {
+    list-style: none;
+    display: flex;
+    gap: 40px;
+}
+
+.menu a {
+    text-decoration: none;
+    color: #e27c09;
+    font-weight: 500;
+}
+
+.menu a.active,
+.menu a:hover {
+    color: #f7931e;
+}
+
+.login-btn {
+    background-color: #f7931e;
+    color: white;
+    border: none;
+    padding: 10px 25px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: 600;
+    font-size: 16px;
+    transition: 0.3s;
+}
+
+.login-btn:hover {
+    background-color: #e27c09;
+}
