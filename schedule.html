@@ -4,6 +4,14 @@
     <meta charset="UTF-8">
     <title>Tuyến đường phổ biến</title>
     <link rel="stylesheet" href="schedule.css">
+    <!-- Thư viện Leaflet -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+    <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+
+    <!-- Thư viện Routing Machine (để hiển thị đường đi) -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet-routing-machine/dist/leaflet-routing-machine.css" />
+    <script src="https://unpkg.com/leaflet-routing-machine/dist/leaflet-routing-machine.js"></script>
+
 </head>
 <body>
 <header>
@@ -86,6 +94,32 @@
     </div>
 
 
+</section>
+<section id="map-section">
+    <h2>BẢN ĐỒ VIỆT NAM</h2>
+    <div id="map"></div>
+</section>
+
+<section id="booking-form">
+    <h2>ĐĂNG KÝ CHUYẾN ĐI</h2>
+    <form id="trip-form">
+        <label>Họ và tên:</label>
+        <input type="text" id="name" placeholder="Nhập họ tên" required>
+
+        <label>Email:</label>
+        <input type="email" id="email" placeholder="Nhập email" required>
+
+        <label>Điểm đi:</label>
+        <input type="text" id="start" placeholder="Ví dụ: Hồ Chí Minh" required>
+
+        <label>Điểm đến:</label>
+        <input type="text" id="end" placeholder="Ví dụ: Đà Lạt" required>
+
+        <label>Ngày đi:</label>
+        <input type="date" id="date" required>
+
+        <button type="submit">Đăng ký</button>
+    </form>
 </section>
 
 <script src="schedule.js"></script>

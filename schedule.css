@@ -135,7 +135,6 @@ header {
 .menu a:hover {
     color: #f7931e;
 }
-
 .login-btn {
     background-color: #f7931e;
     color: white;
@@ -149,5 +148,59 @@ header {
 }
 
 .login-btn:hover {
+    background-color: #e27c09;
+}
+#map-section {
+    text-align: center;
+    color: white;
+    margin-top: 50px;
+}
+
+#map {
+    height: 500px;
+    width: 90%;
+    margin: 0 auto;
+    border-radius: 15px;
+    border: 2px solid #f7931e;
+}
+
+#booking-form {
+    background: rgba(255, 255, 255, 0.85);
+    width: 70%;
+    margin: 40px auto;
+    padding: 30px;
+    border-radius: 12px;
+    text-align: left;
+    color: #333;
+}
+
+#booking-form h2 {
+    text-align: center;
+    color: #f7931e;
+    margin-bottom: 20px;
+}
+
+#booking-form form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+#booking-form input, #booking-form button {
+    padding: 10px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    font-size: 16px;
+}
+
+#booking-form button {
+    background-color: #f7931e;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-weight: 600;
+}
+
+#booking-form button:hover {
     background-color: #e27c09;
 }
