@@ -1,0 +1,82 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+header {
+    background-color: #4a5568;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 60px;
+    border-bottom: 1px solid #e5e5e5;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: 700;
+    color: #f7931e;
+    text-decoration: none; /* bỏ gạch chân */
+}
+
+.logo:hover {
+    color: #e27c09; /* hiệu ứng khi rê chuột */
+}
+
+.menu {
+    list-style: none;
+    display: flex;
+    gap: 40px;
+}
+
+.menu a {
+    text-decoration: none;
+    color: #e27c09;
+    font-weight: 500;
+}
+
+.menu a.active,
+.menu a:hover {
+    color: #f7931e;
+}
+
+.login-btn {
+    background-color: #f7931e;
+    color: white;
+    border: none;
+    padding: 10px 25px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: 600;
+    font-size: 16px;
+    transition: 0.3s;
+}
+
+.login-btn:hover {
+    background-color: #e27c09;
+}
+footer {
+    background: #0a4d8c;
+    color: white;
+    padding: 30px 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    text-align: center;
+}
+
+footer .left {
+    font-size: 14px;
+}
+
+footer .right a {
+    color: #ffb400;
+    text-decoration: none;
+    margin: 0 10px;
+    transition: 0.3s;
+}
+
+footer .right a:hover {
+    color: white;
+}

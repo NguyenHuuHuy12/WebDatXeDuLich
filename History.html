@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="History.css">
+    <script src="History.js"></script>
+</head>
+<body>
+<div class="container">
+    <header>
+        <h1>Lịch sử đặt xe</h1>
+        <div class="actions">
+            <button class="btn" id="exportCsv">Xuất CSV</button>
+            <button class="btn secondary" id="clearFilters">Xoá bộ lọc</button>
+        </div>
+    </header>
+
+
+    <div class="card">
+        <div class="row">
+            <div class="search">
+                <input id="q" placeholder="Tìm theo mã đặt, điểm đi/đến, tài xế..." autocomplete="off">
+                <div class="suggest" id="suggest"></div>
+            </div>
+            <div class="filters">
+                <select id="statusFilter">
+                    <option value="">--Tất cả trạng thái--</option>
+                    <option value="pending">Đang chờ</option>
+                    <option value="done">Hoàn thành</option>
+                    <option value="cancel">Đã huỷ</option>
+                </select>
+                <input type="date" id="from">
+                <input type="date" id="to">
+            </div>
+        </div>
+
+
+        <div class="list" id="list"></div>
+    </div>
+</div>
+
+
+<!-- modal chi tiết -->
+<div class="modal" id="modal">
+    <div class="box">
+        <h3 id="md_route">Chi tiết đặt xe</h3>
+        <div class="row"><div class="muted">Mã đặt:</div><div id="md_code"></div></div>
+        <div class="row"><div class="muted">Ngày:</div><div id="md_date"></div></div>
+        <div class="row"><div class="muted">Tài xế:</div><div id="md_driver"></div></div>
+        <div class="row"><div class="muted">Phí:</div><div id="md_price"></div></div>
+        <div style="margin-top:12px;text-align:right"><button class="btn" id="closeModal">Đóng</button></div>
+    </div>
+</div>
+<footer>
+    <div class="left">
+        © 2025 Auto Cars. Mọi quyền được bảo lưu.
+    </div>
+    <div class="right">
+        <a href="#">Chính sách bảo mật</a> |
+        <a href="#">Điều khoản sử dụng</a> |
+        <a href="#">Liên hệ</a>
+    </div>
+</footer>
+</body>
+</html>

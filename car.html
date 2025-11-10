@@ -26,6 +26,25 @@
 
 <section class="car-section">
     <h1>Loại xe</h1>
+    <button class="add-btn" id="addCarBtn">+</button>
+
+    <div class="car-grid" id="carGrid">
+        <!-- Dữ liệu xe sẽ được JS chèn ở đây -->
+    </div>
+</section>
+
+<!-- Hộp thoại thêm/sửa -->
+<div class="modal" id="carModal">
+    <div class="modal-content">
+        <h2 id="modalTitle">Thêm loại xe</h2>
+        <label>Tên loại xe:</label>
+        <input type="text" id="carName" placeholder="VD: Xe 7 chỗ">
+        <label>Link hình ảnh:</label>
+        <input type="text" id="carImage" placeholder="Nhập URL ảnh">
+        <button id="saveCarBtn">Lưu</button>
+        <button id="closeModalBtn">Đóng</button>
+    </div>
+</div>
     <div class="car-grid">
         <a href="xe7cho.html" class="car-card">
             <img src="https://otohonda.com.vn/wp-content/uploads/Danh-gia-Honda-BR-V-Xe-7-cho-gia-re-cua-Honda.jpg" alt="Xe 7 chỗ">
@@ -41,7 +60,7 @@
             </div>
         </a>
 
-        <a href="xe4cho.html" class="car-card">
+        <a href="car4.html" class="car-card">
             <img src="https://hyundaibinhthuan.vn/wp-content/uploads/Hyundai-Elantra-6-1.jpg" alt="Xe 4 chỗ">
             <div class="overlay">
                 <p>THUÊ XE 4 CHỖ</p>
@@ -62,6 +81,16 @@
             </div>
         </a>
     </div>
-</section>
+
+<footer>
+    <div class="left">
+        © 2025 Auto Cars. Mọi quyền được bảo lưu.
+    </div>
+    <div class="right">
+        <a href="#">Chính sách bảo mật</a> |
+        <a href="#">Điều khoản sử dụng</a> |
+        <a href="#">Liên hệ</a>
+    </div>
+</footer>
 </body>
 </html>
