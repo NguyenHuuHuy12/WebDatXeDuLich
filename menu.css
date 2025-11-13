@@ -1,198 +1,80 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: "Poppins", sans-serif;
-}
-
 body {
-    background-image: url("https://cdn-media.sforum.vn/storage/app/media/wp-content/uploads/2024/02/anh-thien-nhien-Thumbnail.jpg");
-    color: #2d3748;
-    background-size: cover;
-    height: 100%;
-    display: flex;
-    flex-direction: column;
     margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background: linear-gradient(to bottom right, #004e92, #000428);
+    color: white;
 }
-
-/* Header */
 header {
-    background-color: #4a5568;
+    background: rgba(0, 0, 0, 0.4);
+    padding: 15px 30px;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 20px 60px;
-    border-bottom: 1px solid #e5e5e5;
 }
-
-.logo {
+header h1 {
+    margin: 0;
     font-size: 24px;
-    font-weight: 700;
-    color: #f7931e;
-    text-decoration: none; /* bỏ gạch chân */
 }
-
-.logo:hover {
-    color: #e27c09; /* hiệu ứng khi rê chuột */
-}
-
-.menu {
-    list-style: none;
-    display: flex;
-    gap: 40px;
-}
-
-.menu a {
+header .logo {
+    font-size: 1.5em;
+    font-weight: 600;
+    color: white;
     text-decoration: none;
-    color: #e27c09;
-    font-weight: 500;
 }
 
-.menu a.active,
-.menu a:hover {
-    color: #f7931e;
+nav a {
+    text-decoration: none;
+    color: #ddd;
+    margin: 0 10px;
 }
-
-.login-btn {
-    background-color: #f7931e;
+nav a:hover {
     color: white;
-    border: none;
-    padding: 10px 25px;
-    border-radius: 8px;
-    cursor: pointer;
-    font-weight: 600;
-    font-size: 16px;
-    transition: 0.3s;
 }
-
-.login-btn:hover {
-    background-color: #e27c09;
-}
-
-/* Hero section */
 .hero {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 80px 100px;
+    text-align: center;
+    padding: 60px 20px;
 }
-
-.hero-text {
-    flex: 1;
+.hero h2 {
+    font-size: 32px;
+    margin-bottom: 10px;
+}
+.hero p {
+    color: #ccc;
+}
+.form-container {
     max-width: 600px;
+    margin: 30px auto;
+    background: rgba(255, 255, 255, 0.1);
+    padding: 20px;
+    border-radius: 10px;
 }
-
-.hero-text h1 {
-    font-size: 70px;
-    line-height: 1.1;
-    font-weight: 800;
-    color: black;
+label {
+    display: block;
+    margin-bottom: 5px;
 }
-
-.hero-text span {
-    color: #2d3748;
-}
-
-.hero-text p {
-    margin-top: 20px;
-    line-height: 1.6;
-    color:black;
-    font-size: 18px;
-}
-
-.buttons {
-    margin-top: 30px;
-    display: flex;
-    gap: 20px;
-}
-
-.book-btn {
-    background-color: #f7931e;
-    color: white;
+input, select {
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
     border: none;
-    padding: 15px 35px;
-    border-radius: 8px;
-    font-weight: 600;
-    font-size: 18px;
-    cursor: pointer;
-    transition: 0.3s;
+    margin-bottom: 15px;
 }
-
-.book-btn:hover {
-    background-color: #e27c09;
-}
-
-.call-btn {
-    background-color: #2d3748;
+button {
+    background: #06b6d4;
     color: white;
+    padding: 10px 15px;
     border: none;
-    padding: 15px 35px;
-    border-radius: 8px;
-    font-weight: 600;
-    font-size: 18px;
+    border-radius: 5px;
     cursor: pointer;
-    transition: 0.3s;
 }
-
-.call-btn:hover {
-    background-color: #1a202c;
-}
-
-.hero-image img {
-    width: 500px;
-    height: auto;
+button:hover {
+    background: #0891b2;
 }
 footer {
-    background: #0a4d8c;
-    color: white;
-    padding: 30px 50px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    flex-wrap: wrap;
     text-align: center;
-}
-
-footer .left {
+    padding: 15px;
+    background: rgba(0, 0, 0, 0.3);
+    margin-top: 40px;
+    color: #bbb;
     font-size: 14px;
-}
-
-footer .right a {
-    color: #ffb400;
-    text-decoration: none;
-    margin: 0 10px;
-    transition: 0.3s;
-}
-
-footer .right a:hover {
-    color: white;
-}
- .sub-menu{
-    display: none;
-
-}
- .sub-menu{
-    display: block;
-    position: absolute;
-    background: rgb(238,238,238);
-    top: 50px;
-    margin-left: -17px;
-}
-menu .sub-menu .sub-item {
-    color: #8A0000FF;
-    padding: 17px;
-    border: 1px solid lightgray;
-    border-top: 2px solid #8A0000FF;
-}
- .sub-menu .sub-item:hover{
-    background: #8A0000FF;
-    color: white;
-    cursor: pointer;
-}
-ul{
-    margin: 0;
-    padding: 0;
-}
-li{
-    list-style: none;
 }

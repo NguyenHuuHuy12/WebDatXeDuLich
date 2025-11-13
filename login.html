@@ -3,93 +3,72 @@
 <head>
     <meta charset="UTF-8">
     <title>Login / Register</title>
-    <style>
-        body {
-            font-family: Arial;
-            background: url("background.jpg") no-repeat center center fixed;
-            background-size: cover;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
-        }
+    <link rel="stylesheet" href="login.css">
 
-        .container {
-            background: rgba(255, 255, 255, 0.9);
-            padding: 30px;
-            border-radius: 15px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
-            width: 300px;
-        }
-
-        h2 {
-            text-align: center;
-            color: #333;
-        }
-
-        form {
-            display: none;
-            flex-direction: column;
-        }
-
-        form.active {
-            display: flex;
-        }
-
-        input {
-            margin: 8px 0;
-            padding: 8px;
-            border-radius: 5px;
-            border: 1px solid #ccc;
-        }
-
-        button {
-            background: #007bff;
-            color: white;
-            border: none;
-            padding: 10px;
-            border-radius: 5px;
-            cursor: pointer;
-            margin-top: 10px;
-        }
-
-        button:hover {
-            background: #0056b3;
-        }
-
-        .toggle {
-            text-align: center;
-            margin-top: 15px;
-            cursor: pointer;
-            color: #007bff;
-        }
-    </style>
 </head>
 <body>
-<div class="container">
-    <form id="loginForm" class="active">
-        <h2>Login</h2>
-        <input type="text" placeholder="Username" required>
-        <input type="password" placeholder="Password" required>
-        <button type="submit">Đăng nhập</button>
-        <div class="toggle" onclick="toggleForm()">Chưa có tài khoản? Đăng ký ngay</div>
-    </form>
-
-    <form id="registerForm">
-        <h2>Register</h2>
-        <input type="text" placeholder="Username" required>
-        <input type="email" placeholder="Email" required>
-        <input type="password" placeholder="Password" required>
-        <button type="submit">Đăng ký</button>
-        <div class="toggle" onclick="toggleForm()">Đã có tài khoản? Đăng nhập</div>
-    </form>
+<header>
+    <a href="index.html" class="logo">Auto Cars</a>
+    <nav>
+        <a href="index.html">Trang chủ</a>
+        <a href="car.html" class="active">Loại xe</a>
+        <a href="schedule.html">Tuyến đường</a>
+        <a href="contact.html">Liên hệ</a>
+    </nav>
+</header>
+<div class="login-wrap">
+    <div class="login-html">
+        <input id="tab-1" type="radio" name="tab" class="sign-in" checked><label for="tab-1" class="tab">Sign In</label>
+        <input id="tab-2" type="radio" name="tab" class="sign-up"><label for="tab-2" class="tab">Sign Up</label>
+        <div class="login-form">
+            <div class="sign-in-htm">
+                <div class="group">
+                    <label for="user" class="label">Username</label>
+                    <input id="user" type="text" class="input">
+                </div>
+                <div class="group">
+                    <label for="pass" class="label">Password</label>
+                    <input id="pass" type="password" class="input" data-type="password">
+                </div>
+                <div class="group">
+                    <input id="check" type="checkbox" class="check" checked>
+                    <label for="check"><span class="icon"></span> Keep me Signed in</label>
+                </div>
+                <div class="group">
+                    <input type="submit" class="button" value="Sign In">
+                </div>
+                <div class="hr"></div>
+                <div class="foot-lnk">
+                    <a href="#forgot">Forgot Password?</a>
+                </div>
+            </div>
+            <div class="sign-up-htm">
+                <div class="group">
+                    <label for="user" class="label">Username</label>
+                    <input id="user" type="text" class="input">
+                </div>
+                <div class="group">
+                    <label for="pass" class="label">Password</label>
+                    <input id="pass" type="password" class="input" data-type="password">
+                </div>
+                <div class="group">
+                    <label for="pass" class="label">Repeat Password</label>
+                    <input id="pass" type="password" class="input" data-type="password">
+                </div>
+                <div class="group">
+                    <label for="pass" class="label">Email Address</label>
+                    <input id="pass" type="text" class="input">
+                </div>
+                <div class="group">
+                    <input type="submit" class="button" value="Sign Up">
+                </div>
+                <div class="hr"></div>
+                <div class="foot-lnk">
+                    <label for="tab-1">Already Member?</a>
+                </div>
+            </div>
+        </div>
+    </div>
 </div>
-
-<script>
-    function toggleForm() {
-        document.getElementById("loginForm").classList.toggle("active");
-        document.getElementById("registerForm").classList.toggle("active");
-    }
-</script>
 </body>
 </html>
