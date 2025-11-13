@@ -10,57 +10,69 @@
 <body>
 <header>
     <a href="index.html" class="logo">Auto Cars</a>
-
     <nav>
-        <ul class="menu">
-            <li><a href="index.html" class="active">Trang CHủ</a></li>
-            <li><a href="car.html">Loại Xe</a></li>
-            <li><a href="schedule.html">Lịch Trình</a></li>
-            <li><a href="Cost.html">Bảng Giá</a></li>
-            <li><a href="History.html">Lịch sử đặt xe</a></li>
-        </ul>
+        <a href="index.html">Trang chủ</a>
+        <a href="car.html" class="active">Loại xe</a>
+        <a href="schedule.html">Tuyến đường</a>
+        <a href="contact.html">Liên hệ</a>
+        <a href="login.html">Đăng nhập/Đăng kí</a>
     </nav>
-    <button class="login-btn" onclick="window.location.href='login.html'">Login</button>
 </header>
 
-<main class="hero">
-    <div class="hero-text">
-        <h1>Book Rides<br><span>Anywhere</span></h1>
-        <p>Mọi người muốn có một chuyến đi hoàn hảo! Chọn chúng tôi để không bỏ lỡ những điều thú vị nhé</p>
-        <div class="buttons">
-            <button class="book-btn">Book Now</button>
-            <button class="call-btn">Call Operator</button>
-        </div>
-        <br>
-        <h2>Đặt vé xe khách Việt Nam</h2>
-        <br>
-        <b><p>Việt Nam, một điểm đến du lịch nổi tiếng ở Đông Nam Á, thu hút du khách với cảnh quan thiên nhiên tuyệt đẹp và chi phí đi lại phải chăng. Chọn đặt vé xe khách ở Việt Nam giúp tiết kiệm đáng kể chi phí đi lại. Hệ thống xe khách rộng khắp của đất nước kết nối hầu hết mọi thành phố và thị trấn, mang đến lựa chọn đi lại tiết kiệm và tiện lợi cho cả việc khám phá và đảm bảo đúng giờ.
-<br>
-            Sự phát triển của các nền tảng kỹ thuật số đã thay đổi hoàn toàn cách đặt vé xe khách tại Việt Nam. redBus, một công ty dẫn đầu trong lĩnh vực đặt vé xe trực tuyến Đông Nam Á, cung cấp dịch vụ đặt vé dễ dàng, đáng tin cậy và giá cả cạnh tranh với các nhà xe hàng đầu.
-<br>
-            Bạn có thể dễ dàng khám phá các điểm đến nổi tiếng như Hà Nội, Huế, Thành phố Hồ Chí Minh và Vịnh Hạ Long bằng xe khách. Mỗi địa điểm đều mang đến những trải nghiệm độc đáo, từ các di tích lịch sử đến kỳ quan thiên nhiên. Dịch vụ đặt vé redBus không chỉ giới hạn trong các tuyến nội địa mà còn cung cấp các kết nối xe khách quốc tế, giúp bạn dễ dàng di chuyển giữa Việt Nam và các nước láng giềng như Campuchia, mở rộng thêm nhiều lựa chọn cho chuyến đi của bạn.</p>
-        </b>   </div>
-    <div class="hero-image">
-        <img src="https://cdn.tgdd.vn/Files/2021/07/26/1370950/top-12-dia-diem-tuyet-voi-de-di-du-lich-bang-xe-da-14.jpg">
 
-    </div>
-    <div class="hero-image">
-        <img src="https://hltourist.com/img_data/images/Anh-dai-dien-Samco.jpg">
+<section class="hero">
+    <h2>Đặt Xe Du Lịch Dễ Dàng Hơn Bao Giờ Hết</h2>
+    <p>Chọn điểm đến, ngày đi và số ghế — hệ thống sẽ báo giá nhanh chóng cho bạn.</p>
+</section>
 
-    </div>
 
-</main>
+<div class="form-container">
+    <form id="formDatXe" onsubmit="xuLyForm(event)">
+        <label for="diemDi">Điểm đi:</label>
+        <input type="text" id="diemDi" placeholder="Ví dụ: Hà Nội" required>
+
+
+        <label for="diemDen">Điểm đến:</label>
+        <input type="text" id="diemDen" placeholder="Ví dụ: Đà Nẵng" required>
+
+
+        <label for="ngayDi">Ngày đi:</label>
+        <input type="date" id="ngayDi" required>
+
+
+        <label for="soGhe">Số ghế:</label>
+        <select id="soGhe">
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+        </select>
+
+
+        <button type="submit">Xem Báo Giá</button>
+        <button type="button" onclick="lamMoi()">Làm Mới</button>
+    </form>
+</div>
+
+
 <footer>
-    <div class="left">
-        © 2025 Auto Cars. Mọi quyền được bảo lưu.
-    </div>
-    <div class="right">
-        <a href="#">Chính sách bảo mật</a> |
-        <a href="#">Điều khoản sử dụng</a> |
-        <a href="#">Liên hệ</a>
-    </div>
+    © 2025 Auto Cars - Trang web đặt xe du lịch mẫu cho sinh viên
 </footer>
 
-<script src="schedule.js"></script>
+
+<script>
+    function xuLyForm(e) {
+        e.preventDefault();
+        const diemDi = document.getElementById('diemDi').value;
+        const diemDen = document.getElementById('diemDen').value;
+        const ngayDi = document.getElementById('ngayDi').value;
+        const soGhe = document.getElementById('soGhe').value;
+        const gia = (soGhe * 200000).toLocaleString('vi-VN');
+        alert(`Báo giá tạm tính:\nTừ: ${diemDi}\nĐến: ${diemDen}\nNgày: ${ngayDi}\nSố ghế: ${soGhe}\nTổng giá: ${gia} VND`);
+    }
+    function lamMoi() {
+        document.getElementById('formDatXe').reset();
+    }
+</script>
 </body>
 </html>

@@ -10,87 +10,84 @@
 </head>
 <body>
 <header>
-<a href="index.html" class="logo">Auto Cars</a>
-
-<nav>
-    <ul class="menu">
-        <li><a href="index.html" class="active">Trang CHủ</a></li>
-        <li><a href="car.html">Loại Xe</a></li>
-        <li><a href="schedule.html">Lịch Trình</a></li>
-        <li><a href="Cost.html">Bảng Giá</a></li>
-        <li><a href="History.html">Lịch sử đặt xe</a></li>
-    </ul>
-</nav>
-<button class="login-btn" onclick="window.location.href='login.html'">Login</button>
+    <a href="index.html" class="logo">Auto Cars</a>
+    <nav>
+        <a href="index.html">Trang chủ</a>
+        <a href="car.html" class="active">Loại xe</a>
+        <a href="schedule.html">Tuyến đường</a>
+        <a href="contact.html">Liên hệ</a>
+    </nav>
 </header>
 
-<section class="car-section">
-    <h1>Loại xe</h1>
-    <button class="add-btn" id="addCarBtn">+</button>
+<main>
+    <section class="intro">
+        <h1>Các dòng xe phục vụ</h1>
+        <p>Chúng tôi cung cấp đa dạng các loại xe phù hợp cho du lịch, công tác và sự kiện.</p>
+    </section>
 
-    <div class="car-grid" id="carGrid">
-        <!-- Dữ liệu xe sẽ được JS chèn ở đây -->
-    </div>
-</section>
+    <section class="car-list">
+        <div class="car-card">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTkg6Nx7cN0qLmaEPiWynHrW4MVLIhwHLkkXQ&s" alt="Xe Sedan">
+            <h3>Sedan</h3>
+            <p>Tiện nghi, sang trọng, thích hợp cho các chuyến đi cá nhân hoặc gia đình nhỏ.</p>
+        </div>
 
-<!-- Hộp thoại thêm/sửa -->
-<div class="modal" id="carModal">
-    <div class="modal-content">
-        <h2 id="modalTitle">Thêm loại xe</h2>
-        <label>Tên loại xe:</label>
-        <input type="text" id="carName" placeholder="VD: Xe 7 chỗ">
-        <label>Link hình ảnh:</label>
-        <input type="text" id="carImage" placeholder="Nhập URL ảnh">
-        <button id="saveCarBtn">Lưu</button>
-        <button id="closeModalBtn">Đóng</button>
-    </div>
-</div>
-    <div class="car-grid">
-        <a href="xe7cho.html" class="car-card">
-            <img src="https://otohonda.com.vn/wp-content/uploads/Danh-gia-Honda-BR-V-Xe-7-cho-gia-re-cua-Honda.jpg" alt="Xe 7 chỗ">
-            <div class="overlay">
-                <p>THUÊ XE 7 CHỖ</p>
-            </div>
-        </a>
+        <div class="car-card">
+            <img src="https://images2.thanhnien.vn/528068263637045248/2024/11/20/edit-suv-hinh-hop-3-17320682451011549441723.jpeg" alt="Xe SUV">
+            <h3>SUV</h3>
+            <p>Khoang rộng rãi, mạnh mẽ, phù hợp với địa hình đa dạng.</p>
+        </div>
 
-        <a href="xe29cho.html" class="car-card">
-            <img src="https://otomiennam.com.vn/wp-content/uploads/2023/05/Hyundai-Universe-29-cho.jpg" alt="Xe 29 chỗ">
-            <div class="overlay">
-                <p>THUÊ XE 29 CHỖ</p>
-            </div>
-        </a>
+        <div class="car-card">
+            <img src="https://cdn2.tuoitre.vn/thumb_w/1200/471584752817336320/2024/11/4/50-xe-minibus-mang-thuong-hieu-viet-moi-nhat-thi-truong-sap-lan-banh-o-tphcm-1-17307114373121222356165-203-0-1235-1971-crop-17307118685191482415184.jpg" alt="Xe Minibus">
+            <h3>Minibus</h3>
+            <p>Không gian lớn cho nhóm bạn hoặc gia đình đông người.</p>
+        </div>
 
-        <a href="car4.html" class="car-card">
-            <img src="https://hyundaibinhthuan.vn/wp-content/uploads/Hyundai-Elantra-6-1.jpg" alt="Xe 4 chỗ">
-            <div class="overlay">
-                <p>THUÊ XE 4 CHỖ</p>
-            </div>
-        </a>
+        <div class="car-card">
+            <img src="https://i1-vnexpress.vnecdn.net/2023/11/20/MitsubishiPajeroSportVNEjpg-1700453733.jpg?w=500&h=300&q=100&dpr=1&fit=crop&s=_JiH7J97WsEpKMXQg3Ktcg&t=image" alt="Xe Mitsubixi">
+            <h3>Mitsubixi</h3>
+            <p>Khoang rộng rãi, mạnh mẽ, phù hợp với địa hình đa dạng.</p>
+        </div>
 
-        <a href="xe16cho.html" class="car-card">
-            <img src="https://chothuexevip.vn/uploads/2021/03/Xe-Hyundai-Solati-16-cho-02.jpg" alt="Xe du lịch">
-            <div class="overlay">
-                <p>THUÊ XE 16 CHỖ</p>
-            </div>
-        </a>
+        <div class="car-card">
+            <img src="https://otohonda.com.vn/wp-content/uploads/Danh-gia-Honda-BR-V-Xe-7-cho-gia-re-cua-Honda.jpg" alt="Xe Honda BR-V">
+            <h3>Honda BR-V</h3>
+            <p>Khoang rộng rãi, mạnh mẽ, phù hợp với địa hình đa dạng.</p>
+        </div>
+        <div class="car-card">
+            <img src="https://i1-vnexpress.vnecdn.net/2022/03/23/DSCF15692JPG-1648011323.jpg?w=750&h=450&q=100&dpr=1&fit=crop&s=UJzJzAVEG3-zcgaVf2dSAQ" alt="Xe Toyota">
+            <h3>Toyota Veloz</h3>
+            <p>Khoang rộng rãi, mạnh mẽ, phù hợp với địa hình đa dạng.</p>
+        </div>
+        <div class="car-card">
+            <img src="https://images2.thanhnien.vn/528068263637045248/2024/11/20/edit-suv-hinh-hop-3-17320682451011549441723.jpeg" alt="Xe SUV">
+            <h3>SUV</h3>
+            <p>Khoang rộng rãi, mạnh mẽ, phù hợp với địa hình đa dạng.</p>
+        </div>
+        <div class="car-card">
+            <img src="https://images2.thanhnien.vn/528068263637045248/2024/11/20/edit-suv-hinh-hop-3-17320682451011549441723.jpeg" alt="Xe SUV">
+            <h3>SUV</h3>
+            <p>Khoang rộng rãi, mạnh mẽ, phù hợp với địa hình đa dạng.</p>
+        </div>
+        <div class="car-card">
+            <img src="https://images2.thanhnien.vn/528068263637045248/2024/11/20/edit-suv-hinh-hop-3-17320682451011549441723.jpeg" alt="Xe SUV">
+            <h3>SUV</h3>
+            <p>Khoang rộng rãi, mạnh mẽ, phù hợp với địa hình đa dạng.</p>
+        </div>
 
-        <a href="xe9cho.html" class="car-card">
-            <img src="https://images2.thanhnien.vn/zoom/686_429/528068263637045248/2024/4/3/435348873-10228732448090460-7454719412608761829-n-1712152025165765028944-118-0-1368-2000-crop-17121520322641617374970.jpg" alt="Xe trọn gói">
-            <div class="overlay">
-                <p>THUÊ XE 9 CHỖ</p>
-            </div>
-        </a>
-    </div>
+
+    </section>
+
+    <section class="map-section">
+        <h2>Bản đồ Việt Nam</h2>
+        <img src="https://upload.wikimedia.org/wikipedia/commons/2/21/Vietnam_location_map.svg"
+             alt="Bản đồ Việt Nam" class="vietnam-map">
+    </section>
+</main>
 
 <footer>
-    <div class="left">
-        © 2025 Auto Cars. Mọi quyền được bảo lưu.
-    </div>
-    <div class="right">
-        <a href="#">Chính sách bảo mật</a> |
-        <a href="#">Điều khoản sử dụng</a> |
-        <a href="#">Liên hệ</a>
-    </div>
+    <p>&copy; 2025 Auto Cars. Mọi quyền được bảo lưu.</p>
 </footer>
 </body>
 </html>
