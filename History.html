@@ -1,24 +1,32 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="vi">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <title>Lịch sử đặt xe</title>
     <link rel="stylesheet" href="History.css">
     <script src="History.js"></script>
 </head>
 <body>
+<header>
+    <a href="index.html" class="logo">Auto Cars</a>
+    <nav>
+        <a href="index.html">Trang chủ</a>
+        <a href="car.html" class="active">Loại xe</a>
+        <a href="schedule.html">Tuyến đường</a>
+        <a href="contact.html">Liên hệ</a>
+    </nav>
+</header>
 <div class="container">
-    <header>
+
         <h1>Lịch sử đặt xe</h1>
         <div class="actions">
             <button class="btn" id="exportCsv">Xuất CSV</button>
             <button class="btn secondary" id="clearFilters">Xoá bộ lọc</button>
         </div>
-    </header>
 
 
     <div class="card">
-        <div class="row">
+        <div class="row search-filters">
             <div class="search">
                 <input id="q" placeholder="Tìm theo mã đặt, điểm đi/đến, tài xế..." autocomplete="off">
                 <div class="suggest" id="suggest"></div>
@@ -35,23 +43,26 @@
             </div>
         </div>
 
-
-        <div class="list" id="list"></div>
+        <div class="list" id="list">
+            <div class="empty">Không có dữ liệu</div>
+        </div>
     </div>
 </div>
-
 
 <!-- modal chi tiết -->
 <div class="modal" id="modal">
     <div class="box">
-        <h3 id="md_route">Chi tiết đặt xe</h3>
+        <h3>Chi tiết đặt xe</h3>
         <div class="row"><div class="muted">Mã đặt:</div><div id="md_code"></div></div>
         <div class="row"><div class="muted">Ngày:</div><div id="md_date"></div></div>
         <div class="row"><div class="muted">Tài xế:</div><div id="md_driver"></div></div>
         <div class="row"><div class="muted">Phí:</div><div id="md_price"></div></div>
-        <div style="margin-top:12px;text-align:right"><button class="btn" id="closeModal">Đóng</button></div>
+        <div class="modal-actions">
+            <button class="btn" id="closeModal">Đóng</button>
+        </div>
     </div>
 </div>
+
 <footer>
     <div class="left">
         © 2025 Auto Cars. Mọi quyền được bảo lưu.

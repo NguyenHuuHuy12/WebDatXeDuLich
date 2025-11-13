@@ -1,60 +1,48 @@
-body{
-    font-family: Arial, Helvetica, sans-serif;
+* {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
 }
+
+body {
+    background: #f8f9fb;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Header */
 header {
-    background-color: #4a5568;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 20px 60px;
-    border-bottom: 1px solid #e5e5e5;
-}
-
-.logo {
-    font-size: 24px;
-    font-weight: 700;
-    color: #f7931e;
-    text-decoration: none; /* bỏ gạch chân */
-}
-
-.logo:hover {
-    color: #e27c09; /* hiệu ứng khi rê chuột */
-}
-
-.menu {
-    list-style: none;
-    display: flex;
-    gap: 40px;
-}
-
-.menu a {
-    text-decoration: none;
-    color: #e27c09;
-    font-weight: 500;
-}
-
-.menu a.active,
-.menu a:hover {
-    color: #f7931e;
-}
-
-.login-btn {
-    background-color: #f7931e;
+    background: #003366;
     color: white;
-    border: none;
-    padding: 10px 25px;
-    border-radius: 8px;
-    cursor: pointer;
-    font-weight: 600;
-    font-size: 16px;
-    transition: 0.3s;
+    padding: 15px 40px;
+    position: sticky;
+    top: 0;
+    z-index: 10;
 }
 
-.login-btn:hover {
-    background-color: #e27c09;
+header .logo {
+    font-size: 1.5em;
+    font-weight: 600;
+    color: white;
+    text-decoration: none;
 }
+
+nav a {
+    color: white;
+    margin-left: 20px;
+    text-decoration: none;
+    transition: 0.2s;
+}
+
+nav a:hover,
+nav a.active {
+    color: #ffcc00;
+}
+
 footer {
     background: #0a4d8c;
     color: white;
