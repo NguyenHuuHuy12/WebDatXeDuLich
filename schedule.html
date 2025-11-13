@@ -15,21 +15,16 @@
 </head>
 <body>
 <header>
-<a href="index.html" class="logo">Auto Cars</a>
-
-<nav>
-    <ul class="menu">
-        <li><a href="index.html" class="active">Trang CHủ</a></li>
-        <li><a href="car.html">Loại Xe</a></li>
-        <li><a href="schedule.html">Lịch Trình</a></li>
-        <li><a href="Cost.html">Bảng Giá</a></li>
-        <li><a href="History.html">Lịch sử đặt xe</a></li>
-    </ul>
-</nav>
-<button class="login-btn" onclick="window.location.href='login.html'">Login</button>
+    <a href="index.html" class="logo">Auto Cars</a>
+    <nav>
+        <a href="index.html">Trang chủ</a>
+        <a href="car.html" class="active">Loại xe</a>
+        <a href="schedule.html">Tuyến đường</a>
+        <a href="contact.html">Liên hệ</a>
+    </nav>
 </header>
 
-<section class="carousel">
+<section class="carousel" style="background-color: #b10000">
     <h2>TUYẾN ĐƯỜNG PHỔ BIẾN</h2>
     <div class="carousel-container">
         <button class="nav prev" onclick="moveSlide(-1)">&#10094;</button>
@@ -105,6 +100,9 @@
     <form id="trip-form">
         <label>Họ và tên:</label>
         <input type="text" id="name" placeholder="Nhập họ tên" required>
+
+        <label>SDT:</label>
+        <input type="interger" id="interger" placeholder="Nhập sdt" required>
 
         <label>Email:</label>
         <input type="email" id="email" placeholder="Nhập email" required>
