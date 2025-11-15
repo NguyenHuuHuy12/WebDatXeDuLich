@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="Booking.css">
+    <script src="Booking.js"></script>
+</head>
+<body>
+<header>
+    <a href="index.html" class="logo">Auto Cars</a>
+    <nav>
+        <a href="index.html">Trang chủ</a>
+        <a href="car.html" class="active">Loại xe</a>
+        <a href="schedule.html">Tuyến đường</a>
+        <a href="Combo.html">Combo du lịch</a>
+        <a href="History.html">Lịch sử đặt xe</a>
+        <a href="contact.html">Liên hệ</a>
+        <a href="login.html">Đăng nhập/Đăng kí</a>
+    </nav>
+</header>
+<div class="card">
+    <h3>Thông tin chuyến đi</h3>
+    <div class="row">
+        <input type="text" placeholder="Điểm đi" id="from">
+        <input type="text" placeholder="Điểm đến" id="to">
+        <input type="date" id="date">
+        <select id="carType">
+            <option value="">Chọn loại xe</option>
+            <option value="sedan">Sedan</option>
+            <option value="suv">SUV</option>
+            <option value="minivan">Minivan</option>
+        </select>
+    </div>
+    <div class="row">
+        <button class="btn" id="checkPrice">Kiểm tra giá</button>
+    </div>
+    <div id="priceInfo"></div>
+
+    <h3>Thanh toán</h3>
+    <div class="row">
+        <select id="paymentMethod">
+            <option value="cash">Tiền mặt</option>
+            <option value="vnpay">VNPay</option>
+            <option value="momo">Momo</option>
+        </select>
+        <button class="btn" id="payBtn">Thanh toán</button>
+    </div>
+    <div id="paymentResult"></div>
+</div>
+<footer>
+    <div class="left">© 2025 Auto Cars. Mọi quyền được bảo lưu.</div>
+    <div class="right">
+        <a href="#">Chính sách bảo mật</a> |
+        <a href="#">Điều khoản sử dụng</a> |
+        <a href="#">Liên hệ</a>
+    </div>
+</footer>
+</body>
+</html>
