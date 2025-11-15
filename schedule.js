@@ -89,4 +89,8 @@ L.marker([9.6, 115.4]).addTo(map).bindPopup('<strong>Trường Sa (Việt Nam)</
 document.getElementById("trip-form").addEventListener("submit", function (e) {
     e.preventDefault();
     alert("Đăng ký thành công! Hệ thống sẽ gửi thông tin đến email của bạn.");
+    // Chuyển trang sang booking.html
+    setTimeout(() => {
+        window.location.href = "booking.html";
+    }, 2000);
 });

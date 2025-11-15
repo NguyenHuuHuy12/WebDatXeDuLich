@@ -20,10 +20,36 @@
         <a href="index.html">Trang chủ</a>
         <a href="car.html" class="active">Loại xe</a>
         <a href="schedule.html">Tuyến đường</a>
+        <a href="Combo.html">Combo du lịch</a>
+        <a href="History.html">Lịch sử đặt xe</a>
         <a href="contact.html">Liên hệ</a>
+        <a href="login.html">Đăng nhập/Đăng kí</a>
     </nav>
 </header>
+<section id="booking-form">
+    <h2 style="color:#003366 " >ĐĂNG KÝ CHUYẾN ĐI</h2>
+    <form id="trip-form">
+        <label>Họ và tên:</label>
+        <input type="text" id="name" placeholder="Nhập họ tên" required>
 
+        <label>SDT:</label>
+        <input type="interger" id="interger" placeholder="Nhập sdt" required>
+
+        <label>Email:</label>
+        <input type="email" id="email" placeholder="Nhập email" required>
+
+        <label>Điểm đi:</label>
+        <input type="text" id="start" placeholder="Ví dụ: Hồ Chí Minh" required>
+
+        <label>Điểm đến:</label>
+        <input type="text" id="end" placeholder="Ví dụ: Đà Lạt" required>
+
+        <label>Ngày đi:</label>
+        <input type="date" id="date" required>
+
+        <button style="background-color: #003366 " type="submit" >Đăng ký</button>
+    </form>
+</section>
 <section class="carousel" style="background-color: #b10000">
     <h2>TUYẾN ĐƯỜNG PHỔ BIẾN</h2>
     <div class="carousel-container">
@@ -95,30 +121,7 @@
     <div id="map"></div>
 </section>
 
-<section id="booking-form">
-    <h2>ĐĂNG KÝ CHUYẾN ĐI</h2>
-    <form id="trip-form">
-        <label>Họ và tên:</label>
-        <input type="text" id="name" placeholder="Nhập họ tên" required>
 
-        <label>SDT:</label>
-        <input type="interger" id="interger" placeholder="Nhập sdt" required>
-
-        <label>Email:</label>
-        <input type="email" id="email" placeholder="Nhập email" required>
-
-        <label>Điểm đi:</label>
-        <input type="text" id="start" placeholder="Ví dụ: Hồ Chí Minh" required>
-
-        <label>Điểm đến:</label>
-        <input type="text" id="end" placeholder="Ví dụ: Đà Lạt" required>
-
-        <label>Ngày đi:</label>
-        <input type="date" id="date" required>
-
-        <button type="submit">Đăng ký</button>
-    </form>
-</section>
 
 <script src="schedule.js"></script>
 <footer>

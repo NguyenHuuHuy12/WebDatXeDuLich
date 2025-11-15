@@ -71,10 +71,27 @@ button:hover {
     background: #0891b2;
 }
 footer {
+    background: #0a4d8c;
+    color: white;
+    padding: 30px 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
     text-align: center;
-    padding: 15px;
-    background: rgba(0, 0, 0, 0.3);
-    margin-top: 40px;
-    color: #bbb;
+}
+
+footer .left {
     font-size: 14px;
+}
+
+footer .right a {
+    color: #ffb400;
+    text-decoration: none;
+    margin: 0 10px;
+    transition: 0.3s;
+}
+
+footer .right a:hover {
+    color: white;
 }
