@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <title>Admin Panel - Auto Cars</title>
+    <link rel="stylesheet" href="admin.css">
+
+</head>
+<body>
+<header>
+    <a href="index.html" class="logo">Auto Cars</a>
+    <nav>
+        <a href="index.html">Trang chủ</a>
+        <a href="car.html" class="active">Loại xe</a>
+        <a href="schedule.html">Tuyến đường</a>
+        <a href="Combo.html">Combo du lịch</a>
+        <a href="History.html">Lịch sử đặt xe</a>
+        <a href="contact.html">Liên hệ</a>
+        <a href="login.html">Đăng nhập/Đăng kí</a>
+    </nav>
+</header>
+<div class="sidebar">
+    <h2>ADMIN</h2>
+    <ul>
+        <li data-page="dashboard" class="active">Dashboard</li>
+        <li data-page="users">Khách hàng</li>
+        <li data-page="drivers">Tài xế</li>
+        <li data-page="cars">Loại xe</li>
+        <li data-page="trips">Đặt xe</li>
+        <li data-page="promo">Khuyến mãi</li>
+        <li data-page="feedback">Phản hồi</li>
+    </ul>
+</div>
+
+<div class="content">
+
+    <!-- DASHBOARD -->
+    <section id="dashboard" class="page active">
+        <h2>Thống kê</h2>
+        <div class="grid">
+            <div class="card stat">
+                <h3 id="totalTrips">0</h3>
+                <p>Tổng chuyến đi</p>
+            </div>
+            <div class="card stat">
+                <h3 id="totalRevenue">0 VNĐ</h3>
+                <p>Doanh thu</p>
+            </div>
+            <div class="card stat">
+                <h3 id="activeCars">0</h3>
+                <p>Xe đang chạy</p>
+            </div>
+            <div class="card stat">
+                <h3 id="topRoute">Chưa có</h3>
+                <p>Tuyến phổ biến</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- USERS -->
+    <section id="users" class="page">
+        <h2>Khách hàng</h2>
+        <div class="list" id="userList"></div>
+    </section>
+
+    <!-- DRIVERS -->
+    <section id="drivers" class="page">
+        <h2>Tài xế</h2>
+        <div class="list" id="driverList"></div>
+    </section>
+
+    <!-- CARS -->
+    <section id="cars" class="page">
+        <h2>Loại xe</h2>
+        <div class="list" id="carList"></div>
+    </section>
+
+    <!-- TRIPS -->
+    <section id="trips" class="page">
+        <h2>Danh sách đặt xe</h2>
+        <div class="list" id="tripList"></div>
+    </section>
+
+    <!-- PROMO -->
+    <section id="promo" class="page">
+        <h2>Khuyến mãi</h2>
+        <button class="btn" id="addPromo">+ Thêm khuyến mãi</button>
+        <div class="list" id="promoList"></div>
+    </section>
+
+    <!-- FEEDBACK -->
+    <section id="feedback" class="page">
+        <h2>Phản hồi khách hàng</h2>
+        <div class="list" id="feedbackList"></div>
+    </section>
+
+</div>
+
+</body>
+</html>

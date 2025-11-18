@@ -1,0 +1,99 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+body {
+    background: #f8f9fb;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Header */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #003366;
+    color: white;
+    padding: 15px 40px;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+}
+
+header .logo {
+    font-size: 1.5em;
+    font-weight: 600;
+    color: white;
+    text-decoration: none;
+}
+
+nav a {
+    color: white;
+    margin-left: 20px;
+    text-decoration: none;
+    transition: 0.2s;
+}
+
+nav a:hover{
+    color: #ffcc00;
+}
+.group-container {
+    text-align: center;
+    padding: 40px 0;
+}
+.group-container h1 {
+    font-size: 36px;
+    margin-bottom: 10px;
+}
+.sub {
+    color: #666;
+    margin-bottom: 40px;
+}
+.card-list {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+.combo-card {
+    width: 300px;
+    background: #fff;
+    padding: 20px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    border-radius: 10px;
+    transition: 0.3s;
+}
+.combo-card:hover {
+    transform: translateY(-5px);
+}
+.combo-card img {
+    width: 100%;
+    border-radius: 10px;
+}
+.combo-card h2 {
+    margin-top: 15px;
+    font-size: 24px;
+}
+.combo-card ul {
+    text-align: left;
+    margin-top: 10px;
+    padding-left: 20px;
+}
+.price-btn {
+    margin-top: 15px;
+    width: 100%;
+    padding: 12px;
+    background: #4CAF50;
+    border: none;
+    color: #fff;
+    font-size: 18px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.2s;
+}
+.price-btn:hover {
+    background: #3e9143;
+}

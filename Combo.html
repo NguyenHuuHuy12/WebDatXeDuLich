@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="Combo.css">
+</head>
+<body>
+<header>
+    <a href="index.html" class="logo">Auto Cars</a>
+    <nav>
+        <a href="index.html">Trang chủ</a>
+        <a href="car.html" class="active">Loại xe</a>
+        <a href="schedule.html">Tuyến đường</a>
+        <a href="Combo.html">Combo du lịch</a>
+        <a href="History.html">Lịch sử đặt xe</a>
+        <a href="contact.html">Liên hệ</a>
+        <a href="login.html">Đăng nhập/Đăng kí</a>
+    </nav>
+</header>
+<section class="group-container">
+    <h1>Combo Đặt Xe Nhóm</h1>
+    <p class="sub">Tiết kiệm hơn khi đi cùng nhau</p>
+
+
+    <div class="card-list">
+        <div class="combo-card">
+            <img src="https://htcamera.htskys.com/wp-content/uploads/2024/08/Huong-dan-cach-quay-vlog-du-lich-don-gian-va-an-tuong-HTCamera.jpg" alt="Combo 2 người">
+            <h2>Combo 2 người</h2>
+            <ul>
+                <li>Xe 4 chỗ</li>
+                <li>Miễn phí 1 điểm dừng</li>
+                <li>Giảm 5% cho chuyến tiếp theo</li>
+            </ul>
+            <button class="price-btn">499.000đ</button>
+        </div>
+
+
+        <div class="combo-card">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSLFpT3gTXvOqrCbMpgxE57_q3EEMlk3QSKsA&s" alt="Combo 4 người">
+            <h2>Combo 4 người</h2>
+            <ul>
+                <li>Xe 7 chỗ</li>
+                <li>Miễn phí 2 điểm dừng</li>
+                <li>Tặng voucher 100.000đ</li>
+            </ul>
+            <button class="price-btn">899.000đ</button>
+        </div>
+
+
+        <div class="combo-card">
+            <img src="https://bvhttdl.mediacdn.vn/291773308735864832/2025/7/9/5acc9e56-00da-44a0-aa16-981293b4e170-3ae13983-c11b-4122-a5d8-4314c6643262-pho-di-bo-1-1752027961336551641692.jpg" alt="Combo 6 người">
+            <h2>Combo 6 người</h2>
+            <ul>
+                <li>Xe 9 chỗ</li>
+                <li>Miễn phí 3 điểm dừng</li>
+                <li>Tặng gói nước suối</li>
+            </ul>
+            <button class="price-btn">1.290.000đ</button>
+        </div>
+
+        <div class="combo-card">
+            <img src="https://static-images.vnncdn.net/files/publish/2022/12/21/cay-mo-ho-guom-463.jpeg?width=600&s=rQ88srRawHpyWT97N-5vXw" alt="Combo 8 người">
+            <h2>Combo 8 người</h2>
+            <ul>
+                <li>Xe 12 chỗ</li>
+                <li>Miễn phí 4 điểm dừng</li>
+                <li>Giảm 10% giá phòng nghỉ</li>
+            </ul>
+            <button class="price-btn">1.790.000đ</button>
+        </div>
+
+        <div class="combo-card">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRzN408nS_DgFVTYwb2Udc94pIndE5tZXYZKA&s" alt="Combo 6 người">
+            <h2>Combo 10 người</h2>
+            <ul>
+                <li>Xe 12 chỗ</li>
+                <li>Miễn phí 5 điểm dừng</li>
+                <li>Giảm 20% giá phòng nghỉ</li>
+            </ul>
+            <button class="price-btn">2.290.000đ</button>
+        </div>
+
+        <div class="combo-card">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQis43uEOqyngrEU5XqFVyDU4dYDAVUQkLEMg&s" alt="Combo 12 người">
+            <h2>Combo 12 người</h2>
+            <ul>
+                <li>Xe 16 chỗ</li>
+                <li>Miễn phí 5 điểm dừng</li>
+                <li>Giảm 25% giá phòng nghỉ</li>
+            </ul>
+            <button class="price-btn">2.590.000đ</button>
+        </div>
+
+    </div>
+</section>
+<script>
+    document.querySelectorAll('.price-btn').forEach(btn => {
+        btn.addEventListener('click', () => {
+            alert("Bạn đã chọn gói trị giá " + btn.innerText);
+            window.location.href = "booking.html";
+        });
+    });
+</script>
+</body>
+</html>
