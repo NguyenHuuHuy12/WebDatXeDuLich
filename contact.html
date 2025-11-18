@@ -1,0 +1,54 @@
+<!-- admin.html -->
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="utf-8">
+    <title>Admin - Quản trị Auto Cars</title>
+
+    <link rel="stylesheet" href="Contact.css">
+</head>
+<body>
+<header>
+    <a href="index.html" class="logo">Auto Cars</a>
+    <nav>
+        <a href="index.html">Trang chủ</a>
+        <a href="car.html" class="active">Loại xe</a>
+        <a href="schedule.html">Tuyến đường</a>
+        <a href="Combo.html">Combo du lịch</a>
+        <a href="History.html">Lịch sử đặt xe</a>
+        <a href="contact.html">Liên hệ</a>
+        <a href="login.html">Đăng nhập/Đăng kí</a>
+    </nav>
+</header>
+
+    <h1>Đánh giá & Phản hồi</h1>
+    <p>Chúng tôi trân trọng mọi ý kiến của bạn</p>
+
+
+<div class="container">
+
+    <!-- Form gửi đánh giá -->
+    <div class="card">
+        <h2>Gửi đánh giá của bạn</h2>
+
+        <div class="stars" id="starBox">
+            <span data-val="1">★</span>
+            <span data-val="2">★</span>
+            <span data-val="3">★</span>
+            <span data-val="4">★</span>
+            <span data-val="5">★</span>
+        </div>
+
+        <input id="name" type="text" placeholder="Tên của bạn">
+        <textarea id="message" placeholder="Nội dung đánh giá..."></textarea>
+        <button id="sendBtn">Gửi đánh giá</button>
+    </div>
+
+    <!-- Danh sách feedback -->
+    <div class="card">
+        <h2>Đánh giá gần đây</h2>
+        <div id="fbList" class="list"></div>
+    </div>
+</div>
+</body>
+</html>

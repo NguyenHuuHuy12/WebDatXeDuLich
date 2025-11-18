@@ -40,8 +40,7 @@ nav a {
     transition: 0.2s;
 }
 
-nav a:hover,
-nav a.active {
+nav a:hover{
     color: #ffcc00;
 }
 
