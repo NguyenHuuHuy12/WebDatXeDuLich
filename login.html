@@ -4,74 +4,81 @@
     <meta charset="UTF-8">
     <title>Login / Register</title>
     <link rel="stylesheet" href="login.css">
+    <script src="login.js"></script>
 
 </head>
 <body>
 <header>
     <a href="index.html" class="logo">Auto Cars</a>
     <nav>
+        <a href="admin.html">Admin</a>
         <a href="index.html">Trang chủ</a>
         <a href="car.html" class="active">Loại xe</a>
         <a href="schedule.html">Tuyến đường</a>
         <a href="Combo.html">Combo du lịch</a>
         <a href="History.html">Lịch sử đặt xe</a>
-        <a href="contact.html">Liên hệ</a>
+        <a href="contact.html">Đánh giá & phản hồi</a>
         <a href="login.html">Đăng nhập/Đăng kí</a>
+
+
     </nav>
 </header>
-<div class="login-wrap">
-    <div class="login-html">
-        <input id="tab-1" type="radio" name="tab" class="sign-in" checked><label for="tab-1" class="tab">Sign In</label>
-        <input id="tab-2" type="radio" name="tab" class="sign-up"><label for="tab-2" class="tab">Sign Up</label>
-        <div class="login-form">
-            <div class="sign-in-htm">
-                <div class="group">
-                    <label for="user" class="label">Username</label>
-                    <input id="user" type="text" class="input">
-                </div>
-                <div class="group">
-                    <label for="pass" class="label">Password</label>
-                    <input id="pass" type="password" class="input" data-type="password">
-                </div>
-                <div class="group">
-                    <input id="check" type="checkbox" class="check" checked>
-                    <label for="check"><span class="icon"></span> Keep me Signed in</label>
-                </div>
-                <div class="group">
-                    <input type="submit" class="button" value="Sign In">
-                </div>
-                <div class="hr"></div>
-                <div class="foot-lnk">
-                    <a href="#forgot">Forgot Password?</a>
-                </div>
+<div class="form-wrapper">
+<div class="container" id="container">
+
+    <!-- Sign Up -->
+    <div class="form-container sign-up-container">
+        <form>
+            <h1>Create Account</h1>
+            <div class="social-container">
+                <a href="#" class="social">f</a>
+                <a href="#" class="social">G+</a>
+                <a href="#" class="social">in</a>
             </div>
-            <div class="sign-up-htm">
-                <div class="group">
-                    <label for="user" class="label">Username</label>
-                    <input id="user" type="text" class="input">
-                </div>
-                <div class="group">
-                    <label for="pass" class="label">Password</label>
-                    <input id="pass" type="password" class="input" data-type="password">
-                </div>
-                <div class="group">
-                    <label for="pass" class="label">Repeat Password</label>
-                    <input id="pass" type="password" class="input" data-type="password">
-                </div>
-                <div class="group">
-                    <label for="pass" class="label">Email Address</label>
-                    <input id="pass" type="text" class="input">
-                </div>
-                <div class="group">
-                    <input type="submit" class="button" value="Sign Up">
-                </div>
-                <div class="hr"></div>
-                <div class="foot-lnk">
-                    <label for="tab-1">Already Member?</a>
-                </div>
+            <span>or use your email for registration</span>
+            <input type="text" placeholder="Name">
+            <input type="email" placeholder="Email">
+            <input type="password" placeholder="Password">
+            <button>SIGN UP</button>
+        </form>
+    </div>
+
+    <!-- Sign In -->
+    <div class="form-container sign-in-container">
+        <form>
+            <h1>Sign In</h1>
+            <div class="social-container">
+                <a href="#" class="social">f</a>
+                <a href="#" class="social">G+</a>
+                <a href="#" class="social">in</a>
             </div>
+            <span>or use your account</span>
+            <input type="email" placeholder="Email">
+            <input type="password" placeholder="Password">
+            <a href="#">Forgot your password?</a>
+            <button>SIGN IN</button>
+        </form>
+    </div>
+
+    <!-- Overlay -->
+    <div class="overlay-container">
+        <div class="overlay">
+
+            <div class="overlay-panel overlay-left">
+                <h1>Welcome Back!</h1>
+                <p>To keep connected with us please login with your personal info</p>
+                <button class="ghost" id="signIn">SIGN IN</button>
+            </div>
+
+            <div class="overlay-panel overlay-right">
+                <h1>Hello, Friend!</h1>
+                <p>Enter your personal details and start journey with us</p>
+                <button class="ghost" id="signUp">SIGN UP</button>
+            </div>
+
         </div>
     </div>
+</div>
 </div>
 <footer>
     <div class="left">© 2025 Auto Cars. Mọi quyền được bảo lưu.</div>

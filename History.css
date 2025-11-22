@@ -156,23 +156,31 @@ select,input[type=date]{padding:8px;border-radius:6px;border:1px solid #ccc}
 .modal .row{margin-top:8px}
 .modal-actions{text-align:right;margin-top:12px}
 
-/* footer */
 footer {
-    background: var(--accent);
+    background: #0a4d8c;
     color: white;
-    padding:20px 40px;
+    padding: 30px 50px;
     display: flex;
     justify-content: space-between;
+    align-items: center;
     flex-wrap: wrap;
+    text-align: center;
 }
-footer .left{font-size:14px}
-footer .right a{
+
+footer .left {
+    font-size: 14px;
+}
+
+footer .right a {
     color: #ffb400;
     text-decoration: none;
-    margin: 0 6px;
+    margin: 0 10px;
     transition: 0.3s;
 }
-footer .right a:hover{color:white}
+
+footer .right a:hover {
+    color: white;
+}
 
 /* responsive */
 @media (max-width:800px){

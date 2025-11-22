@@ -121,4 +121,28 @@ button {
     color:#ffb400;
     font-size:14px;
 }
+footer {
+    background: #0a4d8c;
+    color: white;
+    padding: 30px 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    text-align: center;
+}
 
+footer .left {
+    font-size: 14px;
+}
+
+footer .right a {
+    color: #ffb400;
+    text-decoration: none;
+    margin: 0 10px;
+    transition: 0.3s;
+}
+
+footer .right a:hover {
+    color: white;
+}

@@ -1,18 +1,7 @@
-const loginBtn = document.getElementById('loginBtn');
-const registerBtn = document.getElementById('registerBtn');
-const loginForm = document.getElementById('loginForm');
-const registerForm = document.getElementById('registerForm');
-
-loginBtn.addEventListener('click', () => {
-    loginBtn.classList.add('active');
-    registerBtn.classList.remove('active');
-    loginForm.classList.add('active');
-    registerForm.classList.remove('active');
+document.getElementById("signUp").addEventListener("click", () => {
+    document.getElementById("container").classList.add("right-panel-active");
 });
 
-registerBtn.addEventListener('click', () => {
-    registerBtn.classList.add('active');
-    loginBtn.classList.remove('active');
-    registerForm.classList.add('active');
-    loginForm.classList.remove('active');
+document.getElementById("signIn").addEventListener("click", () => {
+    document.getElementById("container").classList.remove("right-panel-active");
 });
