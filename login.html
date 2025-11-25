@@ -4,89 +4,74 @@
     <meta charset="UTF-8">
     <title>Login / Register</title>
     <link rel="stylesheet" href="login.css">
-    <script src="login.js"></script>
-
+    <script src="login.js" defer></script>
 </head>
 <body>
-<header>
-    <a href="index.html" class="logo">Auto Cars</a>
-    <nav>
-        <a href="admin.html">Admin</a>
-        <a href="index.html">Trang chủ</a>
-        <a href="car.html" class="active">Loại xe</a>
-        <a href="schedule.html">Tuyến đường</a>
-        <a href="Combo.html">Combo du lịch</a>
-        <a href="History.html">Lịch sử đặt xe</a>
-        <a href="contact.html">Đánh giá & phản hồi</a>
-        <a href="login.html">Đăng nhập/Đăng kí</a>
+<div class="wrapper">
 
+    <header>
+        <a href="index.html" class="logo">Auto Cars</a>
+        <nav>
+            <a href="admin.html">Admin</a>
+            <a href="index.html">Trang chủ</a>
+            <a href="car.html">Loại xe</a>
+            <a href="schedule.html">Tuyến đường</a>
+            <a href="Combo.html">Combo du lịch</a>
+            <a href="History.html">Lịch sử đặt xe</a>
+            <a href="contact.html">Đánh giá & phản hồi</a>
+            <a href="login.html" class="active">Đăng nhập/Đăng kí</a>
+        </nav>
+    </header>
 
-    </nav>
-</header>
-<div class="form-wrapper">
-<div class="container" id="container">
+    <main>
+        <div class="auth-box">
 
-    <!-- Sign Up -->
-    <div class="form-container sign-up-container">
-        <form>
-            <h1>Create Account</h1>
-            <div class="social-container">
-                <a href="#" class="social">f</a>
-                <a href="#" class="social">G+</a>
-                <a href="#" class="social">in</a>
-            </div>
-            <span>or use your email for registration</span>
-            <input type="text" placeholder="Name">
-            <input type="email" placeholder="Email">
-            <input type="password" placeholder="Password">
-            <button>SIGN UP</button>
-        </form>
-    </div>
-
-    <!-- Sign In -->
-    <div class="form-container sign-in-container">
-        <form>
-            <h1>Sign In</h1>
-            <div class="social-container">
-                <a href="#" class="social">f</a>
-                <a href="#" class="social">G+</a>
-                <a href="#" class="social">in</a>
-            </div>
-            <span>or use your account</span>
-            <input type="email" placeholder="Email">
-            <input type="password" placeholder="Password">
-            <a href="#">Forgot your password?</a>
-            <button>SIGN IN</button>
-        </form>
-    </div>
-
-    <!-- Overlay -->
-    <div class="overlay-container">
-        <div class="overlay">
-
-            <div class="overlay-panel overlay-left">
-                <h1>Welcome Back!</h1>
-                <p>To keep connected with us please login with your personal info</p>
-                <button class="ghost" id="signIn">SIGN IN</button>
+            <div class="tabs">
+                <button id="btnLogin" class="active">Đăng nhập</button>
+                <button id="btnRegister">Đăng kí</button>
             </div>
 
-            <div class="overlay-panel overlay-right">
-                <h1>Hello, Friend!</h1>
-                <p>Enter your personal details and start journey with us</p>
-                <button class="ghost" id="signUp">SIGN UP</button>
-            </div>
+            <!-- Đăng nhập -->
+            <form id="loginForm" class="form show">
+                <h2>Đăng nhập</h2>
+                <input type="text" placeholder="Tên đăng nhập" required>
+                <input type="password" placeholder="Mật khẩu" required>
+
+                <button class="btn primary" >Đăng nhập</button>
+
+                <p class="switch">Chưa có tài khoản?
+                    <span id="switchToRegister">Đăng kí ngay</span>
+                </p>
+            </form>
+
+            <!-- Đăng kí -->
+            <form id="registerForm" class="form">
+                <h2>Đăng kí</h2>
+                <input type="text" placeholder="Tên đăng nhập" required>
+                <input type="text" placeholder="Số điện thoại" required>
+                <input type="email" placeholder="Email" required>
+                <input type="password" placeholder="Mật khẩu" required>
+                <input type="password" placeholder="Nhập lại mật khẩu" required>
+
+                <button class="btn primary">Tạo tài khoản</button>
+
+                <p class="switch">Đã có tài khoản?
+                    <span id="switchToLogin">Đăng nhập ngay</span>
+                </p>
+            </form>
 
         </div>
-    </div>
+    </main>
+
+    <footer>
+        <div class="left">© 2025 Auto Cars. Mọi quyền được bảo lưu.</div>
+        <div class="right">
+            <a href="#">Chính sách bảo mật</a> |
+            <a href="#">Điều khoản sử dụng</a> |
+            <a href="#">Liên hệ</a>
+        </div>
+    </footer>
+
 </div>
-</div>
-<footer>
-    <div class="left">© 2025 Auto Cars. Mọi quyền được bảo lưu.</div>
-    <div class="right">
-        <a href="#">Chính sách bảo mật</a> |
-        <a href="#">Điều khoản sử dụng</a> |
-        <a href="#">Liên hệ</a>
-    </div>
-</footer>
 </body>
 </html>

@@ -181,6 +181,20 @@ footer .right a {
 footer .right a:hover {
     color: white;
 }
+html, body {
+    height: 100%;
+}
+
+.wrapper {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+main {
+    flex: 1;
+}
+
 
 /* responsive */
 @media (max-width:800px){
