@@ -84,3 +84,36 @@ document.addEventListener("DOMContentLoaded", () => {
 
     renderCars();
 });
+document.addEventListener("DOMContentLoaded", () => {
+    const cards = document.querySelectorAll(".car-card");
+    const seatFilter = document.getElementById("seatFilter");
+
+    // Toggle mở rộng thẻ
+    cards.forEach(card => {
+        card.addEventListener("click", () => {
+            if (card.classList.contains("expanded")) {
+                card.classList.remove("expanded");
+            } else {
+                cards.forEach(c => c.classList.remove("expanded"));
+                card.classList.add("expanded");
+            }
+        });
+    });
+
+    // Lọc xe theo data-val
+    seatFilter.addEventListener("change", () => {
+        const value = seatFilter.value;
+
+        cards.forEach(card => {
+            const seatType = card.getAttribute("data-val");
+
+            if (value === "all" || value === seatType) {
+                card.style.display = "block";
+            } else {
+                card.style.display = "none";
+            }
+        });
+    });
+});
+
+

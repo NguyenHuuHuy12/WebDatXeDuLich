@@ -7,27 +7,45 @@
     <script src="Booking.js"></script>
 </head>
 <body>
+<div class="wrapper">
 <header>
     <a href="index.html" class="logo">Auto Cars</a>
     <nav>
         <a href="admin.html">Admin</a>
         <a href="index.html">Trang chủ</a>
         <a href="car.html" class="active">Loại xe</a>
-        <a href="schedule.html">Tuyến đường</a>
+        <a href="schedule.html">Đặt lịch đi</a>
         <a href="Combo.html">Combo du lịch</a>
         <a href="History.html">Lịch sử đặt xe</a>
         <a href="contact.html">Đánh giá & phản hồi</a>
         <a href="login.html">Đăng nhập/Đăng kí</a>
 
-
     </nav>
 </header>
+    <main>
 <div class="card">
     <h3>Thông tin chuyến đi</h3>
     <div class="row">
+        <input type="text" placeholder="Họ tên" id="name">
+        <input type="text" placeholder="SDT" id="number">
+        <input type="text" placeholder="Email" id="email">
+        <select id="Diver">
+            <option value="">Chọn tài xế</option>
+            <option value="sedan">Nguyễn Văn Sáng</option>
+            <option value="suv">Phạm Quang Ngọc</option>
+            <option value="minivan">Vũ Văn Tường</option>
+            <option value="minivan">Trần Thanh Sơn</option>
+            <option value="minivan">Hoàng Văn Tiến</option>
+            <option value="minivan">Lê Vũ Kiệt</option>
+            <option value="minivan">Lý Thần Tồn</option>
+            <option value="minivan">Lam Văn Tài</option>
+            <option value="minivan">Trần Quang Liêm</option>
+        </select>
         <input type="text" placeholder="Điểm đi" id="from">
         <input type="text" placeholder="Điểm đến" id="to">
-        <input type="date" id="date">
+        <input type="date" placeholder="Ngày đi" id="date di">
+        <input type="date" placeholder="Ngày về" id="date ve">
+
         <select id="carType">
             <option value="">Chọn loại xe</option>
             <option value="sedan">Sedan</option>
@@ -51,6 +69,7 @@
     </div>
     <div id="paymentResult"></div>
 </div>
+    </main>
 <footer>
     <div class="left">© 2025 Auto Cars. Mọi quyền được bảo lưu.</div>
     <div class="right">
@@ -59,5 +78,6 @@
         <a href="#">Liên hệ</a>
     </div>
 </footer>
+</div>
 </body>
 </html>

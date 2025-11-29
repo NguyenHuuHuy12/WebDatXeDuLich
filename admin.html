@@ -4,24 +4,24 @@
     <meta charset="UTF-8">
     <title>Admin Panel - Auto Cars</title>
     <link rel="stylesheet" href="admin.css">
-    <script src="admin.js"></script>
-
+    <script src="admin.js" defer></script>
 </head>
 <body>
+
 <header>
     <a href="index.html" class="logo">Auto Cars</a>
     <nav>
-        <a href="admin.html">Admin</a>
+        <a href="admin.html" class="active">Admin</a>
         <a href="index.html">Trang chủ</a>
-        <a href="car.html" class="active">Loại xe</a>
-        <a href="schedule.html">Tuyến đường</a>
+        <a href="car.html">Loại xe</a>
+        <a href="schedule.html">Đặt lịch đi</a>
         <a href="Combo.html">Combo du lịch</a>
         <a href="History.html">Lịch sử đặt xe</a>
-        <a href="contact.html">Đánh giá & phản hồi</a>
+        <a href="contact.html">Phản hồi</a>
         <a href="login.html">Đăng nhập/Đăng kí</a>
-
     </nav>
 </header>
+<div class="admin-wrapper">
 <div class="sidebar">
     <h2>ADMIN</h2>
     <ul>
@@ -29,7 +29,6 @@
         <li data-page="users">Khách hàng</li>
         <li data-page="drivers">Tài xế</li>
         <li data-page="cars">Loại xe</li>
-        <li data-page="trips">Đặt xe</li>
         <li data-page="promo">Khuyến mãi</li>
         <li data-page="feedback">Phản hồi</li>
     </ul>
@@ -41,26 +40,14 @@
     <section id="dashboard" class="page active">
         <h2>Thống kê</h2>
         <div class="grid">
-            <div class="card stat">
-                <h3 id="totalTrips">0</h3>
-                <p>Tổng chuyến đi</p>
-            </div>
-            <div class="card stat">
-                <h3 id="totalRevenue">0 VNĐ</h3>
-                <p>Doanh thu</p>
-            </div>
-            <div class="card stat">
-                <h3 id="activeCars">0</h3>
-                <p>Xe đang chạy</p>
-            </div>
-            <div class="card stat">
-                <h3 id="topRoute">Chưa có</h3>
-                <p>Tuyến phổ biến</p>
-            </div>
+            <div class="card stat"><h3 id="totalUsers">0</h3><p>Khách hàng</p></div>
+            <div class="card stat"><h3 id="totalDrivers">0</h3><p>Tài xế</p></div>
+            <div class="card stat"><h3 id="totalCars">0</h3><p>Loại xe</p></div>
+            <div class="card stat"><h3 id="totalPromo">0</h3><p>Khuyến mãi</p></div>
         </div>
     </section>
 
-    <!-- USERS -->
+    <!-- CUSTOMERS -->
     <section id="users" class="page">
         <h2>Khách hàng</h2>
         <div class="list" id="userList"></div>
@@ -69,25 +56,21 @@
     <!-- DRIVERS -->
     <section id="drivers" class="page">
         <h2>Tài xế</h2>
+        <button class="btn" id="addDriverBtn">+ Thêm tài xế</button>
         <div class="list" id="driverList"></div>
     </section>
 
     <!-- CARS -->
     <section id="cars" class="page">
         <h2>Loại xe</h2>
+        <button class="btn" id="addCarBtn">+ Thêm loại xe</button>
         <div class="list" id="carList"></div>
-    </section>
-
-    <!-- TRIPS -->
-    <section id="trips" class="page">
-        <h2>Danh sách đặt xe</h2>
-        <div class="list" id="tripList"></div>
     </section>
 
     <!-- PROMO -->
     <section id="promo" class="page">
         <h2>Khuyến mãi</h2>
-        <button class="btn" id="addPromo">+ Thêm khuyến mãi</button>
+        <button class="btn" id="addPromoBtn">+ Thêm voucher</button>
         <div class="list" id="promoList"></div>
     </section>
 
@@ -98,6 +81,12 @@
     </section>
 
 </div>
+
+<!-- Popup modal -->
+<div class="modal" id="modal">
+    <div class="modal-content" id="modalContent"></div>
+</div>
+</div>
 <footer>
     <div class="left">© 2025 Auto Cars. Mọi quyền được bảo lưu.</div>
     <div class="right">
@@ -106,5 +95,6 @@
         <a href="#">Liên hệ</a>
     </div>
 </footer>
+
 </body>
 </html>

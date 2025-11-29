@@ -16,12 +16,11 @@
         <a href="admin.html">Admin</a>
         <a href="index.html">Trang chủ</a>
         <a href="car.html" class="active">Loại xe</a>
-        <a href="schedule.html">Tuyến đường</a>
+        <a href="schedule.html">Đặt lịch đi</a>
         <a href="Combo.html">Combo du lịch</a>
         <a href="History.html">Lịch sử đặt xe</a>
         <a href="contact.html">Đánh giá & phản hồi</a>
         <a href="login.html">Đăng nhập/Đăng kí</a>
-
     </nav>
 </header>
 
@@ -31,64 +30,277 @@
         <p>Chúng tôi cung cấp đa dạng các loại xe phù hợp cho du lịch, công tác và sự kiện.</p>
     </section>
 
+    <section class="filter-bar">
+        <label for="seatFilter">Phân loại xe:</label>
+        <select id="seatFilter">
+            <option value="all">Tất cả</option>
+            <option value="4">Xe 4 chỗ</option>
+            <option value="7">Xe 7 chỗ</option>
+            <option value="12">Xe 12 chỗ</option>
+        </select>
+    </section>
+
     <section class="car-list">
-        <div class="car-card">
+        <div class="car-card" data-val="4">
             <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTkg6Nx7cN0qLmaEPiWynHrW4MVLIhwHLkkXQ&s" alt="Xe Sedan">
             <h3>Sedan</h3>
             <p>Tiện nghi, sang trọng, thích hợp cho các chuyến đi cá nhân hoặc gia đình nhỏ.</p>
+            <div class="spec">
+                • Công suất: 170 HP<br>
+                • Nhiên liệu: Xăng<br>
+                • Số ghế: 7<br>
+                • Truyền động: Tự động
+            </div>
         </div>
 
-        <div class="car-card">
+        <div class="car-card" data-val="4">
             <img src="https://images2.thanhnien.vn/528068263637045248/2024/11/20/edit-suv-hinh-hop-3-17320682451011549441723.jpeg" alt="Xe SUV">
             <h3>SUV</h3>
             <p>Khoang rộng rãi, mạnh mẽ, phù hợp với địa hình đa dạng.</p>
+            <div class="spec">
+                • Công suất: 170 HP<br>
+                • Nhiên liệu: Xăng<br>
+                • Số ghế: 7<br>
+                • Truyền động: Tự động
+            </div>
         </div>
 
-        <div class="car-card">
+        <div class="car-card" data-val="4">
             <img src="https://cdn2.tuoitre.vn/thumb_w/1200/471584752817336320/2024/11/4/50-xe-minibus-mang-thuong-hieu-viet-moi-nhat-thi-truong-sap-lan-banh-o-tphcm-1-17307114373121222356165-203-0-1235-1971-crop-17307118685191482415184.jpg" alt="Xe Minibus">
             <h3>Minibus</h3>
             <p>Không gian lớn cho nhóm bạn hoặc gia đình đông người.</p>
+            <div class="spec">
+                • Công suất: 170 HP<br>
+                • Nhiên liệu: Xăng<br>
+                • Số ghế: 7<br>
+                • Truyền động: Tự động
+            </div>
         </div>
 
-        <div class="car-card">
+        <div class="car-card" data-val="4">
             <img src="https://i1-vnexpress.vnecdn.net/2023/11/20/MitsubishiPajeroSportVNEjpg-1700453733.jpg?w=500&h=300&q=100&dpr=1&fit=crop&s=_JiH7J97WsEpKMXQg3Ktcg&t=image" alt="Xe Mitsubixi">
             <h3>Mitsubixi</h3>
             <p>Khoang rộng rãi, mạnh mẽ, phù hợp với địa hình đa dạng.</p>
+            <div class="spec">
+                • Công suất: 170 HP<br>
+                • Nhiên liệu: Xăng<br>
+                • Số ghế: 7<br>
+                • Truyền động: Tự động
+            </div>
         </div>
 
-        <div class="car-card">
+        <div class="car-card" data-val="4">
             <img src="https://otohonda.com.vn/wp-content/uploads/Danh-gia-Honda-BR-V-Xe-7-cho-gia-re-cua-Honda.jpg" alt="Xe Honda BR-V">
             <h3>Honda BR-V</h3>
             <p>Khoang rộng rãi, mạnh mẽ, phù hợp với địa hình đa dạng.</p>
+            <div class="spec">
+                • Công suất: 170 HP<br>
+                • Nhiên liệu: Xăng<br>
+                • Số ghế: 7<br>
+                • Truyền động: Tự động
+            </div>
         </div>
-        <div class="car-card">
+        <div class="car-card" data-val="4">
             <img src="https://i1-vnexpress.vnecdn.net/2022/03/23/DSCF15692JPG-1648011323.jpg?w=750&h=450&q=100&dpr=1&fit=crop&s=UJzJzAVEG3-zcgaVf2dSAQ" alt="Xe Toyota">
             <h3>Toyota Veloz</h3>
             <p>Khoang rộng rãi, mạnh mẽ, phù hợp với địa hình đa dạng.</p>
+            <div class="spec">
+                • Công suất: 170 HP<br>
+                • Nhiên liệu: Xăng<br>
+                • Số ghế: 7<br>
+                • Truyền động: Tự động
+            </div>
         </div>
-        <div class="car-card">
-            <img src="https://images2.thanhnien.vn/528068263637045248/2024/11/20/edit-suv-hinh-hop-3-17320682451011549441723.jpeg" alt="Xe SUV">
-            <h3>SUV</h3>
+        <div class="car-card" data-val="4">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTxnSkfveLpjz_IkCTAutp-yqSxrhdhXIaQiA&s" alt="Xe SUV">
+            <h3>VINFAST</h3>
             <p>Khoang rộng rãi, mạnh mẽ, phù hợp với địa hình đa dạng.</p>
+            <div class="spec">
+                • Công suất: 170 HP<br>
+                • Nhiên liệu: Xăng<br>
+                • Số ghế: 7<br>
+                • Truyền động: Tự động
+            </div>
         </div>
-        <div class="car-card">
-            <img src="https://images2.thanhnien.vn/528068263637045248/2024/11/20/edit-suv-hinh-hop-3-17320682451011549441723.jpeg" alt="Xe SUV">
-            <h3>SUV</h3>
+        <div class="car-card" data-val="4">
+            <img src="https://hyundaibinhthuan.vn/wp-content/uploads/Ngoai-that-Grand-i10-Hatchback-5-1.jpg" alt="Xe SUV">
+            <h3>HYUNDAI</h3>
             <p>Khoang rộng rãi, mạnh mẽ, phù hợp với địa hình đa dạng.</p>
+            <div class="spec">
+                • Công suất: 170 HP<br>
+                • Nhiên liệu: Xăng<br>
+                • Số ghế: 7<br>
+                • Truyền động: Tự động
+            </div>
         </div>
-        <div class="car-card">
-            <img src="https://images2.thanhnien.vn/528068263637045248/2024/11/20/edit-suv-hinh-hop-3-17320682451011549441723.jpeg" alt="Xe SUV">
-            <h3>SUV</h3>
+        <div class="car-card" data-val="4">
+            <img src="https://file.hstatic.net/1000345021/article/xe-4-cho-thumbnail_7543140c84224ca6a51edca638f1a5e1.jpg" alt="Xe SUV">
+            <h3>MAZDA</h3>
             <p>Khoang rộng rãi, mạnh mẽ, phù hợp với địa hình đa dạng.</p>
+            <div class="spec">
+                • Công suất: 170 HP<br>
+                • Nhiên liệu: Xăng<br>
+                • Số ghế: 7<br>
+                • Truyền động: Tự động
+            </div>
+        </div>
+        <div class="car-card" data-val="4">
+            <img src="https://www.carmudi.vn/_next/image/?url=https://static.carmudi.vn/wp-content/uploads/2020-01/z2vqHkKkfk.jpg&w=1200&q=75" alt="Xe SUV">
+            <h3>CARMUDI</h3>
+            <p>Khoang rộng rãi, mạnh mẽ, phù hợp với địa hình đa dạng.</p>
+            <div class="spec">
+                • Công suất: 170 HP<br>
+                • Nhiên liệu: Xăng<br>
+                • Số ghế: 7<br>
+                • Truyền động: Tự động
+            </div>
+        </div>
+        <div class="car-card" data-val="4">
+            <img src="https://xelexus.net.vn/uploads/images/BMW-7series-bieu-tuong-cua-dong-sedan-cao-cap-tai-Viet-Nam.jpg" alt="Xe SUV">
+            <h3>LEXUS</h3>
+            <p>Khoang rộng rãi, mạnh mẽ, phù hợp với địa hình đa dạng.</p>
+            <div class="spec">
+                • Công suất: 170 HP<br>
+                • Nhiên liệu: Xăng<br>
+                • Số ghế: 7<br>
+                • Truyền động: Tự động
+            </div>
+        </div>
+        <div class="car-card" data-val="4">
+            <img src="https://toyotahcm.vn/wp-content/uploads/2024/01/Xe-Toyota-Raize-Slide-2.jpg" alt="Xe Toyota">
+            <h3>TOYOTA</h3>
+            <p>Khoang rộng rãi, mạnh mẽ, phù hợp với địa hình đa dạng.</p>
+            <div class="spec">
+                • Công suất: 170 HP<br>
+                • Nhiên liệu: Xăng<br>
+                • Số ghế: 7<br>
+                • Truyền động: Tự động
+            </div>
+        </div>
+        <div class="car-card" data-val="4">
+        <img src="https://mercedesphumyhung.com.vn/wp-content/uploads/2025/01/thong-so-mercedes-s500-1.jpg.webp" alt="Xe Mec">
+        <h3>MECEDES</h3>
+        <p>Sang trọng quý phái</p>
+            <div class="spec">
+                • Công suất: 170 HP<br>
+                • Nhiên liệu: Xăng<br>
+                • Số ghế: 7<br>
+                • Truyền động: Tự động
+            </div>
+    </div>
+        <div class="car-card" data-val="4">
+            <img src="https://cdn2.tuoitre.vn/zoom/700_700/2022/6/1/2023-mercedes-amg-one-50-16540758313001931592617-crop-1654076708208572697811.jpg" alt="Xe Mec">
+            <h3>MECEDES</h3>
+            <p>Sang trọng quý phái</p>
+            <div class="spec">
+                • Công suất: 170 HP<br>
+                • Nhiên liệu: Xăng<br>
+                • Số ghế: 7<br>
+                • Truyền động: Tự động
+            </div>
+        </div>
+        <div class="car-card" data-val="4">
+            <img src="https://www.carmudi.vn/_next/image/?url=https://static.carmudi.vn/wp-content/uploads/2021-09/zGDtjCSn2Z.jpg&w=1200&q=75" alt="Xe Mec">
+            <h3>KIA MORNING</h3>
+            <p>Sang trọng quý phái</p>
+            <div class="spec">
+                • Công suất: 170 HP<br>
+                • Nhiên liệu: Xăng<br>
+                • Số ghế: 7<br>
+                • Truyền động: Tự động
+            </div>
+        </div>
+        <div class="car-card" data-val="4">
+            <img src="https://hyundaigiaiphong.com.vn/tempfiles/uploads/Tintuc/News/xe-hyundai-4-cho-6.jpg" alt="Xe Mec">
+            <h3>HYUNDAI</h3>
+            <p>Sang trọng quý phái</p>
+            <div class="spec">
+                • Công suất: 170 HP<br>
+                • Nhiên liệu: Xăng<br>
+                • Số ghế: 7<br>
+                • Truyền động: Tự động
+            </div>
+        </div>
+        <div class="car-card" data-val="7">
+            <img src="https://www.libertyinsurance.com.vn/sites/libertyvn/files/inline-images/K%C3%ADch%20th%C6%B0%E1%BB%9Bc%20xe%20%C3%B4%20t%C3%B4%207%20ch%E1%BB%97_toyota%20innova_0.png" alt="Xe Mec">
+            <h3>INOVA CROSS</h3>
+            <p>Sang trọng quý phái</p>
+            <div class="spec">
+                • Công suất: 170 HP<br>
+                • Nhiên liệu: Xăng<br>
+                • Số ghế: 7<br>
+                • Truyền động: Tự động
+            </div>
+        </div>
+        <div class="car-card" data-val="7">
+            <img src="https://xedoisong.vn/uploads/user_4/2023/6-2023/8/lexus-tx/xedoisong_2024_lexus_tx_1.png" alt="Xe Mec">
+            <h3>SUV</h3>
+            <p>Sang trọng quý phái</p>
+            <div class="spec">
+                • Công suất: 170 HP<br>
+                • Nhiên liệu: Xăng<br>
+                • Số ghế: 7<br>
+                • Truyền động: Tự động
+            </div>
+        </div>
+        <div class="car-card" data-val="7">
+            <img src="https://otohonda.com.vn/wp-content/uploads/Honda-BR-V-Lua-Chon-Xe-7-Cho-Dang-Tien-Trong-Phan-Khuc.jpg" alt="Xe Mec">
+            <h3>BR-V</h3>
+            <p>Sang trọng quý phái</p>
+            <div class="spec">
+                • Công suất: 170 HP<br>
+                • Nhiên liệu: Xăng<br>
+                • Số ghế: 7<br>
+                • Truyền động: Tự động
+            </div>
+        </div>
+        <div class="car-card" data-val="7">
+            <img src="https://cdn.dailyxe.com.vn/image/ngoai-that-honda-crv-rs-04-323818j.jpg" alt="Xe Mec">
+            <h3>CR-V</h3>
+            <p>Sang trọng quý phái</p>
+            <div class="spec">
+                • Công suất: 170 HP<br>
+                • Nhiên liệu: Xăng<br>
+                • Số ghế: 7<br>
+                • Truyền động: Tự động
+            </div>
+        </div>
+        <div class="car-card" data-val="7">
+            <img src="https://www.mitsubishi-motors.com.vn/w/wp-content/uploads/2018/05/outlander_2.jpg" alt="Xe Mec">
+            <h3>OUTLANDER</h3>
+            <p>Sang trọng quý phái</p>
+            <div class="spec">
+                • Công suất: 170 HP<br>
+                • Nhiên liệu: Xăng<br>
+                • Số ghế: 7<br>
+                • Truyền động: Tự động
+            </div>
+        </div>
+        <div class="car-card" data-val="7">
+            <img src="https://media-cdn-v2.laodong.vn/Storage/NewsPortal/2020/11/16/854951/7C1.png" alt="Xe Mec">
+            <h3>FORTUNER</h3>
+            <p>Sang trọng quý phái</p>
+            <div class="spec">
+                • Công suất: 170 HP<br>
+                • Nhiên liệu: Xăng<br>
+                • Số ghế: 7<br>
+                • Truyền động: Tự động
+            </div>
+        </div>
+        <div class="car-card" data-val="7">
+            <img src="https://static-images.vnncdn.net/vps_images_publish/000001/000003/2024/8/11/nhung-mau-xe-7-cho-sieu-luot-trong-tam-gia-600-trieu-phu-hop-voi-gia-dinh-886.jpeg?width=0&s=t8sCUKqSHtMQLJB1rRNEgw" alt="Xe Mec">
+            <h3>XPANDER CROSS</h3>
+            <p>Sang trọng quý phái</p>
+            <div class="spec">
+                • Công suất: 170 HP<br>
+                • Nhiên liệu: Xăng<br>
+                • Số ghế: 7<br>
+                • Truyền động: Tự động
+            </div>
         </div>
 
 
-    </section>
 
-    <section class="map-section">
-        <h2>Bản đồ Việt Nam</h2>
-        <img src="https://upload.wikimedia.org/wikipedia/commons/2/21/Vietnam_location_map.svg"
-             alt="Bản đồ Việt Nam" class="vietnam-map">
     </section>
 </main>
 

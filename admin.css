@@ -122,14 +122,25 @@ nav a:hover{
     margin-bottom:10px;
     box-shadow:0 1px 2px rgba(0,0,0,0.05);
 }
-
 .btn {
-    background:var(--accent);
-    border:none;
-    padding:8px 12px;
-    border-radius:6px;
-    color:white;
-    cursor:pointer;
+    background: var(--accent);
+    border: none;
+    padding: 10px 16px;
+    border-radius: 8px;
+    font-weight: 600;
+    font-size: 14px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.15);
+    transition: 0.2s;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background: #ffa200;
+    transform: translateY(-2px);
+}
+
+.btn:active {
+    transform: scale(0.97);
 }
 footer {
     background: #0a4d8c;
@@ -155,4 +166,118 @@ footer .right a {
 
 footer .right a:hover {
     color: white;
+}
+/* Car list container */
+.car-filter {
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.car-filter select {
+    padding: 8px 12px;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    font-size: 14px;
+    background: white;
+    cursor: pointer;
+    outline: none;
+}
+
+/* Car grid */
+.car-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+/* Single car card */
+.car-card {
+    background: var(--card);
+    border-radius: 12px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.08);
+    padding: 16px;
+    cursor: pointer;
+    transition: 0.25s ease;
+    overflow: hidden;
+    position: relative;
+}
+
+.car-card:hover {
+    transform: translateY(-4px);
+}
+
+/* Car image */
+.car-card img {
+    width: 100%;
+    height: 160px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+/* Car name */
+.car-card h3 {
+    margin-top: 12px;
+    font-size: 18px;
+    font-weight: 600;
+    color: #0a4d8c;
+}
+
+/* Seat number */
+.car-card .seat {
+    font-size: 14px;
+    margin-top: 6px;
+    color: #555;
+}
+
+/* Hidden extended info */
+.car-details {
+    margin-top: 10px;
+    font-size: 14px;
+    line-height: 1.4;
+    display: none;
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+
+/* Expanded card */
+.car-card.expanded {
+    background: #ffffff;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.12);
+}
+
+.car-card.expanded .car-details {
+    display: block;
+    opacity: 1;
+}
+.admin-wrapper {
+    display: flex;
+    width: 100%;
+    height: calc(100vh - 70px); /* trừ chiều cao header */
+    overflow: hidden;
+}
+
+.sidebar {
+    flex-shrink: 0;
+    height: 100%;
+    overflow-y: auto;
+}
+
+.content {
+    padding: 20px;
+    flex: 1;
+    overflow-y: auto;
+    background: #f8f9fb;
+}
+input, select {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    outline: none;
+    width: 220px;
+}
+
+input:focus {
+    border-color: var(--accent);
+    box-shadow: 0 0 4px rgba(255,180,0,0.4);
 }
